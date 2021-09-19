@@ -18,7 +18,7 @@ body{
 
 header{
     padding: 5%;
-    color: rgb(147, 224, 255);
+    color: gainsboro;
 }
 
 main{
@@ -31,7 +31,7 @@ main{
 footer{
     padding: 2%;
     text-align: center;
-    color: rgb(147, 224, 255);
+    color: gainsboro;
 }
 
 .headShot{
