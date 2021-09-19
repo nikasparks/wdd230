@@ -1,0 +1,49 @@
+/*
+Author: Monika Meyers Related sheet: index.html
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
+
+#mainSection{
+    margin: auto;
+    max-width: 65%;
+    background-color: #25be9d;
+}
+
+body{
+    background-color: #2d8dfa;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    padding: 5%;
+    color: rgb(147, 224, 255);
+}
+
+main{
+    background-color: #98c7fc;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+}
+
+footer{
+    padding: 2%;
+    text-align: center;
+    color: rgb(147, 224, 255);
+}
+
+.headShot{
+    width: 37%;
+    height: auto;
+    float: right;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1{
+    font-size: 3.5em;
+    text-align: center;
+    padding: 22px;
+}
