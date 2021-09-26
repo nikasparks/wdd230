@@ -2,18 +2,16 @@
 Author: Monika Meyers Related sheet: index.html
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
-
-#mainSection{
+.mainSection{
     margin: auto;
     max-width: 65%;
-    background-color: #25be9d;
+    background-color: #1753ac;
 }
 
 body{
     background-color: #2d8dfa;
     font-family: 'Comfortaa', cursive;
-    font-family: 'Montserrat', sans-serif;
+    
 }
 
 header{
@@ -26,12 +24,26 @@ main{
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a.assignmentlink:link, a.assignmentlink:visited{
+    color: black;
 }
 
 footer{
-    padding: 2%;
+    padding: 4%;
     text-align: center;
-    color: whitesmoke;
+    color: white;
+}
+
+a.footerlink:link, a.footerlink:visited{
+    color: white;
+}
+
+.lastmodified{
+    padding: 4%;
+    font-size: 0.9rem;
 }
 
 .headShot{
@@ -43,7 +55,6 @@ footer{
 }
 
 h1{
-    font-size: 3.5em;
     text-align: center;
     padding: 22px;
 }

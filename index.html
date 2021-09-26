@@ -6,12 +6,18 @@
         <meta name="description" content="Assignment Protal for Monika Meyers in 
         WDD230: Web Frontend Development at BYU-Idaho Fall 2021">
         <title>Monika Meyers' Portal</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
+
+        <script defer src="js/index.js"></script>
     </head>
     <body>
-        <div id="mainSection">
+        <div class="mainSection">
             <header>
-                <img src="images/My head shot optumized.jpeg" class="headShot" alt="Head shot">
+                <img src="images/my_head_shot_optumized.jpeg" class="headShot" alt="Head shot">
                 <h1>
                     Monika Meyers
                 </h1>
@@ -22,16 +28,15 @@
                 </h2>
                 <hr>
                 <ul>
-                    <li>Lesson 02: <a href="https://www.byui.edu" target="_blank">Assignment Link</a></li>
-                    <li>Lesson 03: <a href="https://www.byui.edu" target="_blank">Assignment Link</a></li>
-                    <li>Lesson 04: <a href="https://www.byui.edu" target="_blank">Link</a> | <a href="https://www.byui.edu" target="_blank">Link</a></li>
+                    <li>Lesson 02: <a class="assignmentlink" href="lesson2/design-principles.html" target="_blank">Design Principles</a></li>
+                    <li>Lesson 03: <a class="assignmentlink" href="https://www.byui.edu" target="_blank">Assignment Link</a></li>
+                    <li>Lesson 04: <a class="assignmentlink" href="https://www.byui.edu" target="_blank">Link</a> | <a class="assignmentlink" href="https://www.byui.edu" target="_blank">Link</a></li>
                 </ul>
             </main>
             <footer>
-                <div>&#169; <a id="currentYear"></a> | Monika Meyers | Utah | BYU-Idaho Online</div>
-                <div>Last Modified: <a id="lastModified"></a></div>
+                <div>&copy; <span id="currentYear"></span> | Monika Meyers | Utah | <a class="footerlink" href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online</a></div>
+                <div class="lastmodified">Last Modified: <span id="lastmodified"></span></div>
             </footer>
         </div>
     </body>   
-    <script src="js/index.js"></script>
 </html>
