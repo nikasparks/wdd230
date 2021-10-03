@@ -1,0 +1,14 @@
+        /*
+Author: Monika Meyers Related sheet: index.html
+*/
+
+@media only screen and (min-width: 37.5em){
+
+
+        nav ul { display: flex; }
+		nav ul li { flex: 1 1 100%; }
+
+        .logo {
+            float: left;
+        }
+}

@@ -1,0 +1,98 @@
+
+body{
+    background-color: #36817B;
+    color: #F4E8C1;
+    text-align: center;
+}
+
+header, h1, h2, h3, h4, .header-font {
+    font-family: 'Walter Turncoat', cursive;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3, h4 {
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: #2d3047;
+    padding: 0.75rem;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+main{
+    grid-template-columns: 1fr;
+}
+
+a {
+    text-decoration-line: none;
+    color: #F4E8C1;
+}
+
+img {
+    padding: 20px;
+}
+
+.header-font{
+    font-size: 2rem;
+}
+
+.domain {
+    max-width: 256px;
+}
+
+.logo {
+    max-width: 128px;
+}
+
+.logo_ex {
+    max-width: 128px;
+}
+.colorchips{
+    max-width: 750px;
+    box-shadow: 10px 10px 5px rgb(41, 41, 41);
+    padding: 0px;
+}
+.colorlist li{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-font, ul li{
+    list-style: none;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+section {
+    background-color: #412234;
+    max-width: 980px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+p{
+    padding-bottom: 20px;
+}
+
+P, footer {
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+    background-color: #2d3047;
+    flex: 0 1 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 10px;
+
+}
