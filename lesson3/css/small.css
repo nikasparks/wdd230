@@ -8,10 +8,14 @@ body{
 header, h1, h2, h3, h4, .header-font {
     font-family: 'Walter Turncoat', cursive;
     padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:center;
+    align-items: center;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 
 h2{
@@ -40,6 +44,7 @@ a {
 
 img {
     padding: 20px;
+    margin: auto;
 }
 
 .header-font{
@@ -94,5 +99,4 @@ footer {
     max-width: 980px;
     margin: 0 auto;
     padding: 10px;
-
 }

@@ -8,7 +8,16 @@ Author: Monika Meyers Related sheet: index.html
         nav ul { display: flex; }
 		nav ul li { flex: 1 1 100%; }
 
+        header{
+            max-width: 1000px;
+        }
+        
+        h1 {
+            font-size: 4rem;
+        }
+
         .logo {
             float: left;
+            
         }
 }
