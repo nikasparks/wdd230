@@ -10,6 +10,7 @@ Author: Monika Meyers Related sheet: index.html
 
         .navlist {
             display: flex;
+            align-items: center;
         }
         .navlist li {
             display: block; 
