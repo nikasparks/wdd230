@@ -31,6 +31,9 @@ Author: Monika Meyers Related sheet: index.html
         h1 {
             font-size: 3rem;
         }
+        h3{
+            font-size: 1.2rem;
+        }
 
         .motto {
             letter-spacing: 1.5pt;
@@ -41,4 +44,39 @@ Author: Monika Meyers Related sheet: index.html
             float: left;
             
         }
+        
+        .weatsum h3 {
+            font-size: 1.2rem;
+        }
+
+        .weatsum{
+            top: 30px;
+            right: 30px;  
+            max-width: 100%;
+            font-size: 1rem;                    
+        }
+
+        .article{
+            max-width: 980px;
+        }
+
+        .article img{
+            float: right;
+            width: 50%;
+            max-width: 25%;
+            margin: 20px;
+        }
+
+        .map{
+            display:block;
+        }
+
+        .map img{
+            margin: 10px auto;
+            width: 50%;
+            padding: 0;
+            box-shadow: 0 0 20px black;
+        }
+        
+
 }

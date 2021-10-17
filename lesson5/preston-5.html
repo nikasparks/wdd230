@@ -6,6 +6,7 @@
         <title>Preston Idaho Page - Monika Meyers WDD 230</title>
         <meta name="description" content="This is the town page Preston ID for the WDD 230 Weather site project">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="shortcut icon" href="images/icon_f29f50c037f9e9a7ba0d7e43ae36c888.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&family=Walter+Turncoat&display=swap" rel="stylesheet">
@@ -15,8 +16,13 @@
 
         <script defer src="js/getDates.js"></script>
         <script defer src="js/menu.js"></script>
+        <script defer src="js/pancakes.js"></script>
     </head>
     <body>
+        <div class="pancakes">
+            <p>🥞Saturday = Preston Pancakes in the Park!🥞</p>
+            <p>🕘 9 a.m. Saturday at the city park.</p>
+        </div>
         <header>
             <picture>
                 <img src="images/weather_icon_256px_water.png" class="logo" alt="logo">
@@ -29,21 +35,91 @@
             <nav>
                 <ul class="navlist">
                     <li><a class="ham" href="#">Menu</a></li>
-                    <li><a class="navlink" href="#" target="_blank">Home</a></li>
-                    <li><a class="navlink" href="#" target="_blank">Preston</a></li>
-                    <li><a class="navlink" href="#" target="_blank">Soda Springs</a></li>
-                    <li><a class="navlink" href="#" target="_blank">Fish Haven</a></li>
-                    <li><a class="navlink" href="#" target="_blank">Storm Center</a></li>
-                    <li><a class="navlink" href="#" target="_blank">Gallery</a></li>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a class="active" href="#" target="_blank">Preston</a></li>
+                    <li><a href="#" target="_blank">Soda Springs</a></li>
+                    <li><a href="#" target="_blank">Fish Haven</a></li>
+                    <li><a href="#" target="_blank">Storm Center</a></li>
+                    <li><a href="#" target="_blank">Gallery</a></li>
                 </ul>
             </nav>
         <main>
             <h2>Preston Idaho</h2>
             <!-- <section class="secmain"></section> -->
-            <div class="placeholder">Hero w/ weather summary</div>
-            <div class="placeholder">5 day forcast</div>
-            <div class="placeholder">Article</div>
-            <div class="placeholder">Contact information</div>
+            <div class="herodiv">
+                <img class="heropic" src="images/hero-picture.jpg" alt="Scene with mountains by a lake.">
+                <section class="weatsum">
+                    <h3>Current Weather</h3>
+                    <div class="weatinfo">
+                        <span class="rstats">Condition:</span><span class="lstats">Sunny</span>
+                        <span class="rstats">Temprature:</span><span class="lstats">72℉</span>
+                        <span class="rstats">Wind Chill:</span><span class="lstats">72℉</span>
+                        <span class="rstats">Humidity:</span><span class="lstats">48%</span>
+                        <span class="rstats">Wind Speed:</span><span class="lstats">2 mph</span>
+                    </div>    
+                </section>
+            </div>
+            <div class="forecast">
+                <h3>Five Day Forecast</h3>
+                <div class="flex">
+                    <div class="flex-col">
+                        <span class="col-head">Monday</span>
+                        <img src="images/sunny.png" alt="sun icon">
+                        <span class="condition">Sunny 72°F</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head">Tuesday</span>
+                        <img src="images/sunny.png" alt="sun icon">
+                        <span class="condition">Sunny 72°F</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head">Wednesday</span>
+                        <img src="images/sunny.png" alt="sun icon">
+                        <span class="condition">Sunny 72°F</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head">Thursday</span>
+                        <img src="images/sunny.png" alt="sun icon">
+                        <span class="condition">Sunny 72°F</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head">Friday</span>
+                        <img src="images/sunny.png" alt="sun icon">
+                        <span class="condition">Sunny 72°F</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <h3>Night Under the Stars</h3>
+                <img src="images/nightsky.jpg" alt="Looking up at the night sky">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec feugiat nisl pretium fusce. Vel quam elementum pulvinar etiam non quam lacus. Urna porttitor rhoncus dolor purus non enim praesent. Nibh venenatis cras sed felis. Porttitor leo a diam sollicitudin tempor id eu nisl nunc. Semper feugiat nibh sed pulvinar proin gravida. Et ultrices neque ornare aenean euismod elementum nisi quis. Facilisi etiam dignissim diam quis. Nisi lacus sed viverra tellus in hac habitasse. Ac orci phasellus egestas tellus rutrum. Risus quis varius quam quisque id diam. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Enim nec dui nunc mattis enim ut tellus elementum. Vitae auctor eu augue ut lectus arcu bibendum at varius. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Id cursus metus aliquam eleifend mi in.</p>
+            </div>
+            <div class="contactus">
+                <section>
+                    <h4>Contact Information</h4>
+                    <address>        
+                      <a href="https://www.google.com/maps/place/Preston+City+Clerk,+70+W+Oneida+St,+Preston,+ID+83263/@42.0969734,-111.87854,18z/data=!4m6!1m3!3m2!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!2sPreston,+ID+83263!3m1!1s0x8754f7eb6e6de7d1:0x1c5be534f2217780" target="_blank">70 W Oneida St, Preston, ID 83263
+                      </a>
+                    </address> 
+                    <p>(123) 555-7890</p>
+                    <a href="mailto:help@triregion.org">help@triregion.org</a>
+                    <div class="social">
+                        <a href="https://twitter.com/" target="_blank">
+                          <img src="images/twitter.png" alt="twitter logo"/>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                          <img src="images/insta.png" alt="instgram logo"/>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                          <img src="images/facebook.png" alt="facebook logo"/>
+                        </a>
+                      </div>
+                  </section>
+                  <div class="map">
+                    <img src="images/map.png" alt="A map displaying the location of Preston.">
+                  </div>
+                  
+            </div>
            
         </main>
         <footer>

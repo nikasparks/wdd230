@@ -5,6 +5,15 @@ body{
     text-align: center;
 }
 
+.pancakes {
+    display: none;
+    margin: 0;
+    padding: 0.25rem 0;
+    background-color: rgb(0, 124, 207);
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
 header, h1, h2, h3, h4{
     font-family: 'Walter Turncoat', cursive;
     padding: 5px;
@@ -25,9 +34,10 @@ header{
 }
 
 .motto{
-    font-family: 'Walter Turncoat', cursive;
+    /* font-family: 'Walter Turncoat', cursive; */
+    font-weight: bold;
     letter-spacing: 1pt;
-    font-size: .9rem;
+    font-size: 1rem;
     padding: 1px;
 }
 
@@ -67,6 +77,12 @@ ul{
     font-family: 'Permanent Marker', cursive;
     font-size: 1rem;
     padding: 10px;
+    display: none;
+}
+
+.navlist a:hover{
+    background-color: #4a4f75;
+    padding: 5px;
 }
 
 .navlist li:first-child{
@@ -74,15 +90,14 @@ ul{
     font-size: 1.5rem;
 }
 
-.navlist li {
-    display: none;
-}
-.navigation a {
+/* .navigation a {
 	display: block;
-	/* padding: 0.75rem; */
+	/* padding: 0.75rem; *
 	text-decoration: none;
 	transition: 0.5s;
-}
+} */
+
+.active{font-weight: bold; text-shadow: 0px 0px 20px #00ffeb;}
 
 .responsive li {
 	display: block;
@@ -92,12 +107,138 @@ main{
     grid-template-columns: 1fr;
 }
 
-.placeholder{
+.herodiv{
+    position: relative;
+    margin: auto;
+    padding: 1px;
+    max-width: 980px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heropic{
+    margin: 10px auto;
+    width: 98%; 
+    padding: 0;
+    box-shadow: 0 0 20px black;           
+}
+section .weatsum{margin: auto;}
+
+.weatsum h3{border-bottom: 1px solid #F4E8C1; font-size: 1rem;}
+
+.weatsum{
+    background-color: rgb(0, 124, 207);
+    box-shadow: 0 0 30px rgb(9, 0, 51);
+    text-align: left;
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    opacity: .85;
+    max-width: 50%;
+    font-size: .75rem;    
+}
+
+.weatinfo{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.rstats, .lstats{
+    
+    margin: 1px;
+    padding: 1px;
+}
+
+.forecast{
     font-family: 'Open Sans', sans-serif;
 	max-width: 980px;
 	background-color:#412234;
     margin: 10px auto;
 	padding: 10px;
+    
+}
+
+.flex{
+    display: flex;
+    flex-wrap: row wrap;
+}
+
+.flex-col:nth-child(1) {
+    border-left: 1px solid #F4E8C1;
+}
+  
+.flex-col {
+    flex: 1 1 auto;
+    background-color: #643550;
+    text-align: center;
+    border-right: 1px solid #F4E8C1;
+    border-bottom: 1px solid #F4E8C1;
+}
+  
+.col-head, .condition {
+    display: block;
+    background-color: #643550;
+    text-align: center;
+    padding: 0.25rem 0;
+    font-size: 1rem;
+}
+  
+.col-head {
+    border-top: 1px solid #F4E8C1;
+    border-bottom: 1px solid #F4E8C1;
+}
+   
+.flex img {
+    width: 40px;
+    height: auto; 
+    padding-top: 0.25rem;
+}
+
+.article{
+    font-family: 'Open Sans', sans-serif;
+	background-color:#412234;
+    margin: 10px auto;
+	padding: 10px;
+    text-align: left;
+    justify-content: center;
+}
+
+.article img{
+    margin: 10px auto;
+    width: 95%;
+    padding: 0;
+    box-shadow: 0 0 20px black;
+}
+
+.contactus{
+    font-family: 'Open Sans', sans-serif;
+    max-width: 980px;
+    background-color: #412234;
+    margin: 10px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.map {
+    display:none;
+}
+
+.social {
+    text-align: center;
+}
+  
+.social a {
+    text-decoration: none;
+}
+
+.social img {
+    width: 5%;
+    padding: 20px;
 }
 
 a {
@@ -114,6 +255,8 @@ img {
     max-width: 128px;
 }
 
+
+
 section.secmain {
     background-color: #412234;
     max-width: 980px;
@@ -124,7 +267,7 @@ p{
     padding: 5px;
 }
 
-P, footer {
+P, footer, span {
     font-family: 'Open Sans', sans-serif;
     margin: auto;
 }
