@@ -1,0 +1,15 @@
+/*
+Author: Monika Meyers Related sheet: index.html
+*/
+
+@media only screen and (min-width: 60em){
+
+    h1, h2 {
+        max-width: 980px;
+    }
+
+    /*.navlist li { 
+        font-size: 1.5rem;
+    } */
+
+}
