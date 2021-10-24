@@ -51,7 +51,7 @@ Author: Monika Meyers Related sheet: index.html
 
         .weatsum{
             top: 30px;
-            right: 30px;  
+            left: 30px;  
             max-width: 100%;
             font-size: 1rem;                    
         }
@@ -79,7 +79,7 @@ Author: Monika Meyers Related sheet: index.html
         }
 
         .social img {
-            width: 6%;
+            width: 8%;
             padding: 20px;
         }
 

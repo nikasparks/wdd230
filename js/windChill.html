@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wind Chill</title>
+    <script>
+        /*
+         * Defining Table
+         * Input(s): Current temperature in F and current wind speed.
+         * Processing: Use f = 35.74 + 0.6215 t - 35.75 s^0.16 + 0.4275 t s^0.16 and inputs to find the wind chill.
+         * Output(s):wind chill in F 
+         */
+        function doInputOutput(){
+            let temp=parseFloat(document.getElementById("temp").value);
+            let wSpeed=parseFloat(document.getElementById("wSpeed").value); 
+            let output=windChill(temp, wSpeed);
+            displayanswer(output);
+        }
+        function windChill(temp, wSpeed){
+            let wcFactor= 35.74 + 0.6215 * temp - 35.75 * wSpeed**0.16 + 0.4275 * temp * wSpeed**0.16
+            return wcFactor;
+        }
+        function displayanswer(showUser) {
+            document.getElementById("output").innerHTML = showUser.toFixed(2) + " F";
+        }
+
+    </script>
+</head>
+<body>
+    Temperature:<input type="text" id="temp" size=10><br>
+    Wind Speed:<input type="text" id="wSpeed" size=10><br>
+    
+    <button type="button" onclick="doInputOutput() || onkeypress;">Find Wind Chill</button>
+    <div id="output"></div>
+</body>
+</html>
