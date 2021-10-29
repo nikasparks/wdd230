@@ -8,7 +8,8 @@ const main = document.querySelector('main');
 
 button.addEventListener('click',() => {
     let fav = input.value;
-
+    let blank = ""
+    input.value = "";
     if (fav != ""){
         const listItem = document.createElement('li');
         const listText = document.createElement('span');
@@ -21,11 +22,10 @@ button.addEventListener('click',() => {
         list.appendChild(listItem);
 
         listBtn.addEventListener('click',() => {list.removeChild(listItem);})
-        const blank = document.querySelector('p');
-        blank.remove('p');
-        
+        blank = document.querySelector('p');
+        main.removeChild(blank);
     }else{
-        const blank = document.createElement('p');
+        blank = document.createElement('p');
         blank.innerHTML = 'Please enter your favorite chapter from the Book of Mormon.';
         main.appendChild(blank);
     }

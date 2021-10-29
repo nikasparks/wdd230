@@ -1,0 +1,284 @@
+
+body{
+    background-color: #36817B;
+    color: #F4E8C1;
+    text-align: center;
+}
+
+.pancakes {
+    display: none;
+    margin: 0;
+    padding: 0.25rem 0;
+    background-color: rgb(0, 124, 207);
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+header, h1, h2, h3, h4{
+    font-family: 'Walter Turncoat', cursive;
+    padding: 5px;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+}
+
+header{
+    max-width: 980px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pagtitle{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.motto{
+    /* font-family: 'Walter Turncoat', cursive; */
+    font-weight: bold;
+    letter-spacing: 1pt;
+    font-size: 1.2rem;
+    padding: 1px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    
+}
+
+h2{
+    font-size: 2rem;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+h3, h4 {
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: #2d3047;
+    /* padding: 0.75rem; */
+    /* max-width: 980px; */
+    margin: 0 auto;
+}
+
+ul{
+    padding: 0;
+    margin: auto;
+}
+
+.navlist{
+    list-style: none;
+    padding: 20px;
+}
+
+.navlist li{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1rem;
+    padding: 10px;
+    display: none;
+}
+
+.navlist a:hover{
+    background-color: #4a4f75;
+    padding: 5px;
+}
+
+.navlist li:first-child{
+    display: block;
+    font-size: 1.5rem;
+}
+
+/* .navigation a {
+	display: block;
+	/* padding: 0.75rem; *
+	text-decoration: none;
+	transition: 0.5s;
+} */
+
+.active{font-weight: bold; text-shadow: 0px 0px 20px #00ffeb;}
+
+.responsive li {
+	display: block;
+}
+
+main{
+    grid-template-columns: 1fr;
+}
+
+.herodiv{
+    position: relative;
+    margin: auto;
+    padding: 1px;
+    max-width: 980px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heropic{
+    margin: 10px auto;
+    width: 98%; 
+    padding: 0;
+    box-shadow: 0 0 20px black;           
+}
+section .weatsum{margin: auto;}
+
+.weatsum h3{border-bottom: 1px solid #F4E8C1; font-size: 1rem;}
+
+.weatsum{
+    background-color: rgb(0, 124, 207);
+    box-shadow: 0 0 30px rgb(9, 0, 51);
+    text-align: left;
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    opacity: .85;
+    max-width: 60%;
+    font-size: .75rem;    
+}
+
+.weatinfo{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.lstats{
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+    margin: 1px;
+    padding: 1px;
+}
+
+.rstats{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    margin: 1px;
+    padding: 1px;
+}
+
+.forecast{
+    font-family: 'Open Sans', sans-serif;
+	max-width: 980px;
+	background-color:#412234;
+    margin: 10px auto;
+	padding: 10px;
+    
+}
+
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+  
+.flex-col {
+    flex: 1 1 auto;
+    background-color: #643550;
+    text-align: center;
+    border-right: 1px solid #F4E8C1;
+    border-bottom: 1px solid #F4E8C1;
+    border-left: 1px solid #F4E8C1;
+}
+  
+.col-head, .condition {
+    display: block;
+    background-color: #643550;
+    text-align: center;
+    padding: 0.25rem 0;
+    font-size: 1rem;
+}
+  
+.col-head {
+    border-top: 1px solid #F4E8C1;
+    border-bottom: 1px solid #F4E8C1;
+}
+   
+.flex img {
+    width: 40px;
+    height: auto; 
+    padding-top: 0.25rem;
+}
+
+.article{
+    font-family: 'Open Sans', sans-serif;
+	background-color:#412234;
+    margin: 10px auto;
+	padding: 10px;
+    
+    justify-content: center;
+}
+
+.article p{
+    text-align: left;
+    line-height: normal;
+}
+
+.article img{
+    margin: 10px auto;
+    width: 75%;
+    padding: 0;
+    box-shadow: 0 0 20px black;
+    
+}
+
+.contactus{
+    font-family: 'Open Sans', sans-serif;
+    max-width: 980px;
+    background-color: #412234;
+    margin: 10px auto;
+    padding: 10px;
+    
+}
+
+.map {
+    display:none;
+}
+
+.social {
+    text-align: center;
+}
+  
+.social a {
+    text-decoration: none;
+}
+
+.social img {
+    width: 7%;
+    padding: 20px;
+}
+
+a {
+    text-decoration-line: none;
+    color: #F4E8C1;
+}
+
+img {
+    padding: 20px;
+    margin: auto;
+}
+
+.logo {
+    max-width: 128px;
+}
+
+p{
+    padding: 5px;
+}
+
+P, footer, span {
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+}
+
+footer {
+    background-color: #2d3047;
+    flex: 0 1 100%;
+    /* max-width: 980px; */
+    margin: 0 auto;
+    padding: 10px;
+}

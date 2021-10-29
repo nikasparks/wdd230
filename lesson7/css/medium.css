@@ -1,0 +1,93 @@
+        /*
+Author: Monika Meyers Related sheet: index.html
+*/
+
+@media only screen and (min-width: 37.5em){
+
+
+       /* nav ul { display: flex; }
+		nav ul li { flex: 1 1 100%; }*/
+
+        .navlist {
+            display: flex;
+            align-items: center;
+        }
+        .navlist li {
+            display: block; 
+            flex: 1 1 auto;
+            font-size: 1.4rem;
+        }
+        .navlist a { 
+            text-align: center;
+        }
+        .navlist li:first-child {
+            display: none;
+        }
+
+        header{
+            max-width: 1000px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+        }
+        h3{
+            font-size: 1.2rem;
+        }
+
+        .motto {
+            letter-spacing: 1.5pt;
+            font-size: larger;
+        }
+
+        .logo {
+            float: left;
+            
+        }
+        
+        .weatsum h3 {
+            font-size: 1.2rem;
+        }
+
+        .weatsum{
+            top: 30px;
+            left: 30px;  
+            max-width: 100%;
+            font-size: 1rem;                    
+        }
+
+        .article{
+            max-width: 980px;
+        }
+
+        .article img{
+            float: right;
+            
+            max-width: 25%;
+            margin: 0px 5px;
+        }
+
+        .map{
+            display:block;
+        }
+
+        .map img{
+            margin: 10px auto;
+            width: 50%;
+            padding: 0;
+            box-shadow: 0 0 20px black;
+        }
+
+        .social img {
+            width: 8%;
+            padding: 20px;
+        }
+
+        .contactus{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+        
+
+}
