@@ -38,15 +38,15 @@ main{
     grid-template-columns: 1fr;
 }
 
-div{
-    /* position: relative; */
+/* div{
+    position: relative; 
     margin: auto;
     padding: 1px;
     max-width: 980px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
 .heropic{
     margin: 10px auto;
@@ -65,8 +65,10 @@ picture img[data-src] {
 }
 
 picture img {
-  filter: blur(0em);
-  transition: filter 0.5s;
+    display: block;
+    margin: 1% auto;
+    filter: blur(0em);
+    transition: filter 0.5s;
 }
 
 /* img {
