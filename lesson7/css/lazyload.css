@@ -1,86 +1,28 @@
-
 body{
     background-color: #36817B;
     color: #F4E8C1;
     text-align: center;
 }
 
-header, h1, h2, h3, h4{
+h1{
     font-family: 'Walter Turncoat', cursive;
-    padding: 5px;
-    margin: auto;
-    justify-content:center;
-    align-items: center;
-}
-
-header{
-    max-width: 980px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-h1 {
     font-size: 2.5rem;
-    
-}
-
-h2{
-    font-size: 2rem;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-h3, h4 {
-    font-size: 1.5rem;
-}
-
-main{
-    grid-template-columns: 1fr;
 }
 
 div{
-    /* position: relative;  */
     margin: auto;
     padding: 1px;
-    max-width: 980px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.heropic{
-    margin: 10px auto;
-    width: 98%; 
-    padding: 0;
-    box-shadow: 0 0 20px black;           
-}
-
-a {
-    text-decoration-line: none;
-    color: #F4E8C1;
-}
-
 picture img[data-src] {
-  filter: blur(0.2em);
+    filter: blur(0.2em);
 }
 
 picture img {
-    /* display: block;
-    margin: 1% auto; */
+    margin: 1% auto;
     filter: blur(0em);
     transition: filter 0.5s;
-}
-
-/* img {
-    padding: 20px;
-    margin: auto;
-} */
-
-p{
-    padding: 5px;
-}
-
-P, footer, span {
-    font-family: 'Open Sans', sans-serif;
-    margin: auto;
 }
