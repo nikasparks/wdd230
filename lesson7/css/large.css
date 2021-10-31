@@ -8,9 +8,17 @@ Author: Monika Meyers Related sheet: index.html
         max-width: 980px;
     }
 
+    h2.gal {
+        font-size: 2.5rem;
+    }
+
+    .lastTime {
+        font-size: 1.5rem;
+    }
+
     figure.gallery{
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1050px;
     }
 
     .pic:hover {

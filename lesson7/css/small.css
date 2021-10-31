@@ -60,7 +60,7 @@ h3, h4 {
     font-family: 'Walter Turncoat', cursive;
     background-color: #2d3047;
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
 }
 nav {
@@ -268,6 +268,7 @@ figure.gallery{
     grid-template-columns: 1fr;
     align-items: baseline;
     justify-items: center;
+    margin: auto;
 }
 
 .gallery picture img[data-src] {
