@@ -8,6 +8,11 @@ Author: Monika Meyers Related sheet: index.html
         max-width: 980px;
     }
 
+    figure.gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     /*.navlist li { 
         font-size: 1.5rem;
     } */

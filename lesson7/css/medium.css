@@ -67,6 +67,11 @@ Author: Monika Meyers Related sheet: index.html
             margin: 0px 5px;
         }
 
+        figure.gallery{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
         .map{
             display:block;
         }
