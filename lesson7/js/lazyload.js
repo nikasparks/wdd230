@@ -3,8 +3,8 @@ const imagesToLoad = document.querySelectorAll("img[data-src]");
 
 //optinal images options in observer
 const imageOptions = {
-    rootMargin: "0px 0px 20px 0px",
-    threshold: 1
+    rootMargin: "0px 0px 10px 0px",
+    threshold: 0.75
 };
 
 const loadImages = (image) => {
@@ -26,8 +26,8 @@ if ("IntersectionObserver" in window) {
     imagesToLoad.forEach((img) => {
         observer.observe(img);
     });
-    } else {
-        imagesToLoad.forEach((img) => {
-            loadimg(img);
-        });
-    }
+} else {
+    imagesToLoad.forEach((img) => {
+        loadimg(img);
+    });
+}
