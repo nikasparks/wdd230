@@ -263,7 +263,7 @@ a {
     color: #F4E8C1;
 }
 
-figure.gallery{
+.gallery{
     display: grid;
     grid-template-columns: 1fr;
     align-items: baseline;
@@ -271,11 +271,11 @@ figure.gallery{
     margin: auto;
 }
 
-.gallery picture img[data-src] {
+.gallery img[data-src] {
     filter: blur(0.2em);
 }
 
-.gallery picture img {
+.gallery img {
     padding:0px;
     max-width: 100%;
     filter: blur(0em);

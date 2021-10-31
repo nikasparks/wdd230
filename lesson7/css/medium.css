@@ -76,7 +76,7 @@ Author: Monika Meyers Related sheet: index.html
         }
     
 
-        figure.gallery{
+        .gallery{
             grid-template-columns: 1fr 1fr;
         }
 
