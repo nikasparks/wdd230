@@ -56,7 +56,13 @@ h2{
 h3, h4 {
     font-size: 1.5rem;
 }
+.lastTime {
+    font-family: 'Walter Turncoat', cursive;
+    background-color: #2d3047;
+    margin: 0 auto;
+    font-size: 1.5rem;
 
+}
 nav {
     background-color: #2d3047;
     /* padding: 0.75rem; */
@@ -261,6 +267,7 @@ figure.gallery{
     display: grid;
     grid-template-columns: 1fr;
     align-items: baseline;
+    justify-items: center;
 }
 
 .gallery picture img[data-src] {
@@ -276,9 +283,12 @@ figure.gallery{
 }
 .pic p{
     background-color: #412234;
-    
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 3px;
 }
 .pic {
+    background-color: #412234;
     max-width: 300px;
     margin: 5% 7%;
     box-shadow: 0px 0px 30px 2px #F4E8C1;
