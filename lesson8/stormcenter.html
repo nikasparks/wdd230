@@ -16,11 +16,9 @@
 
         <script defer src="js/getDates.js"></script>
         <script defer src="js/menu.js"></script>
-        <script defer src="js/lasttime.js"></script>
-        <script defer src="js/lazyload.js"></script>
+
     </head>
     <body>
-        <p class="lastTime"></p>
         <header>
             <picture>
                 <img src="images/weather_icon_256px_water.png" class="logo" alt="logo">
@@ -37,50 +35,70 @@
                     <li><a href="/lesson6/preston-6.html" target="_blank" rel="noreferrer">Preston</a></li>
                     <li><a href="#" target="_blank" rel="noreferrer">Soda Springs</a></li>
                     <li><a href="#" target="_blank" rel="noreferrer">Fish Haven</a></li>
-                    <li><a href="#" target="_blank" rel="noreferrer">Storm Center</a></li>
-                    <li><a class="active" href="gallery-7.html" target="_blank" rel="noreferrer">Gallery</a></li>
+                    <li><a class="active" href="/lesson8/stormcenter.html" target="_blank" rel="noreferrer">Storm Center</a></li>
+                    <li><a href="/lesson7/gallery-7.html" target="_blank" rel="noreferrer">Gallery</a></li>
                 </ul>
             </nav>
         <main>
-            <h2 class="gal">Gallery</h2>
-            <div class="gallery">
-                <div class="pic">
-                    <img src="images/lazyload/placeholderg.jpg" data-src="images/frozen-lake-300w200h.jpg" loading="lazy" alt="frozen lake">
-                    <p>Frozen lake at sunset</p>
-                </div> 
-                <div class="pic">
-                    <img src="images/lazyload/placeholderg.jpg" data-src="images/full-bow-rainbow-300w200h.jpg" loading="lazy" alt="Full bow rainbow">
-                    <p>Full bow rainbow</p>
-                </div>
-                <div class="pic">
-                    <img src="images/lazyload/placeholderg.jpg" data-src="images/leaf-walk-300w200h.jpg" loading="lazy" alt="path covered with leaves">
-                    <p>Walking path covered in fall Leaves</p>
-                </div>
-                <div class="pic">
-                    <img src="images/lazyload/placeholderg.jpg" data-src="images/sunsetonthelake-300w200h.jpg" loading="lazy" alt="sunset with boat on lake">
-                    <p>In a boat at sunset</p>
-                </div>
-                <div class="pic">
-                    <img src="images/lazyload/placeholderg.jpg" data-src="images/tree-sun-set-300w200h.jpg" loading="lazy" alt="Tree in shadow at sunset">
-                    <p>Tree on the lake in shadow at sunset</p>
-                </div>
-                <div class="pic">
-                    <img src="images/lazyload/placeholderg.jpg" data-src="images/aerial-snow-300w200h.jpg" loading="lazy" alt="Aerial View of Snowy path">
-                    <p>Snowy Path from Above</p>
-                </div>
-                <div class="pic">
-                    <img src="images/lazyload/placeholderg.jpg" data-src="images/clouds-and-sun-300w200h.jpg" loading="lazy" alt="Sun rays coming through clouds">
-                    <p>Sun rays coming through the clouds</p>
-                </div>
-                <div class="pic">
-                    <img src="images/lazyload/placeholderg.jpg" data-src="images/daisy-sky-300w200h.jpg" loading="lazy" alt="Daisy with sky for backdrop">
-                    <p>Daisy with a spring sky backdrop</p>
-                </div> 
-                <div class="pic">
-                    <img src="images/lazyload/placeholderg.jpg" data-src="images/dock-300w200h.jpg" loading="lazy" alt="Dock at the lake">
-                    <p>Dock at the lake</p>
-                </div> 
-            </div>    
+            <h2 class="stormrep">Report a Storm</h2>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Reporter's Information</legend>
+                    <label class="top">Full Name*<input type="text" name="fullname" placeholder="First Last" required></label>
+                    <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Zip Code*<input type="number" name="Zip" placeholder="12345" required></label>
+                    <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <div>Are you in danger?</div>
+                    <label class="sbs"><input type="radio" name="danger" value="yes" required> Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="maybe" required> Maybe</label>
+                    <label class="sbs"><input type="radio" name="danger" value="no" required> No</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label class="top">Storm Date <input type="date" name="stormDate"></label>
+                    <label class="top">Pick a Region: 
+                        <select name="region">
+                            <option value="">Please Select Region ... </option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                        <option value="fishHaven">Fish Haven</option>
+                        </select>
+                    </label>
+                    <label class="top">Storm Type <input list="stormTypes" name="stormType">
+                        <datalist id="stormTypes">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </label>
+                    <label class="top">How Severe is it? <input type="range" name="severe" id="severe" min="1" max="10" list="tickmarks">
+                        <datalist id="tickmarks">
+                        <option value="1" label="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5" label="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10" label="10"></option>
+                        </datalist>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label class="topadd">Any Additional Details? 
+                    <textarea name="addInfo" id="addInfo" cols="30" rows="6"></textarea>
+                    </label>
+                </fieldset>
+    
+                <input type="submit" value="Send Storm Report" class="submitBtn">
+            </form>
+
+
             <div class="contactus">
                 <section>
                     <h3>Contact Information</h3>
