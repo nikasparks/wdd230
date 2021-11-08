@@ -273,7 +273,8 @@ form fieldset{
     margin: 2rem 0;
     border: 1px solid #F4E8C1;
     border-radius: 10px;
-    /* padding: .5rem 2%; */
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     background-color: #412234;
 }
@@ -311,6 +312,11 @@ form label.top input, form label.top select{
     background-color: #F4E8C1;
     margin: auto;
 }
+
+label.sbs [type="radio"] {
+    margin-left: 220px;
+}
+
 input#severe{
     height: 2rem;
 }
