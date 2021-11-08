@@ -288,6 +288,8 @@ form legend {
     border-top: 1px solid #F4E8C1;
     border-right: 1px solid #F4E8C1;
     border-left: 1px solid #F4E8C1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 form label.top, form div {
@@ -313,9 +315,17 @@ form label.top input, form label.top select{
     margin: auto;
 }
 
-label.sbs [type="radio"] {
-    margin-left: 220px;
+div.danger {
+    display: flex;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    padding: 0px;
 }
+/* label.sbs [type="radio"] {
+    margin-left: 220px;
+} */
 
 input#severe{
     height: 2rem;
