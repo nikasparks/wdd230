@@ -40,10 +40,67 @@
                 </ul>
             </nav>
         <main>
-            <h2 class="stormrep">Storm Report</h2>
-            <div>
-                <p>Thanks for reporting a storm. We will send help if urgent.  You report has been filed</p>
-            </div>
+            <h2 class="stormrep">Report a Storm</h2>
+            <form method="get" action="stormcenterthanks.html">
+                <fieldset>
+                    <legend>Reporter's Information</legend>
+                    <label class="top">Full Name*<input type="text" name="fullname" placeholder="First Last" pattern="[A-Za-z]{5,}" required></label>
+                    <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Zip Code*<input type="number" name="Zip" placeholder="12345" required></label>
+                    <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <div>Are you in danger?</div>
+                    <div class="danger">
+                        <label class="sbs"><input type="radio" name="danger" value="yes" required> Yes</label>
+                        <label class="sbs"><input type="radio" name="danger" value="maybe" required> Maybe</label>
+                        <label class="sbs"><input type="radio" name="danger" value="no" required> No</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label class="top">Storm Date <input type="date" name="stormDate"></label>
+                    <label class="top">Pick a Region: 
+                        <select name="region">
+                            <option value="">Please Select Region ... </option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                        <option value="fishHaven">Fish Haven</option>
+                        </select>
+                    </label>
+                    <label class="top">Storm Type <input list="stormTypes" placeholder="Please Pick a Strom Type" name="stormType">
+                        <datalist id="stormTypes">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </label>
+                    <label class="top">How Severe is it on a scale of 1 (mild) - 10 (extreme)? <input type="range" name="severe" id="severe" min="1" max="10" list="tickmarks" value="1">
+                        <datalist id="tickmarks">
+                        <option value="1" label="1"></option>
+                        <option value="2" label="2"></option>
+                        <option value="3" label="3"></option>
+                        <option value="4" label="4"></option>
+                        <option value="5" label="5"></option>
+                        <option value="6" label="6"></option>
+                        <option value="7" label="7"></option>
+                        <option value="8" label="8"></option>
+                        <option value="9" label="9"></option>
+                        <option value="10" label="10"></option>
+                        </datalist>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label class="topadd">Any Additional Details? </label>
+                    <label><textarea name="addInfo" id="addInfo" cols="30" rows="6"></textarea></label>
+                    
+                </fieldset>
+    
+                <input type="submit" value="Send Storm Report" class="submitBtn">
+            </form>
+
+
             <div class="contactus">
                 <section>
                     <h3>Contact Information</h3>

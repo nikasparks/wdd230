@@ -328,6 +328,22 @@ div.danger,.topadd {
 } */
 
 
+
+label.top input[type=range]{
+    /* display: flex; */
+    width: 500px;
+   
+}
+
+/* datalist#tickmarks {
+    display:flex;
+    height: 5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+} */
+
 form label.sbs {
     display: block;
     padding: .75rem;
@@ -341,7 +357,7 @@ form label.topadd {
 
 form input.submitBtn {
     border: none;
-    background-color: darkred;
+    background-color: #9c2c13;
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;

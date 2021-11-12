@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Tri-Region News Photo Gallery</title>
-        <meta name="description" content="The photo gallery of the local weather pictures.">
+        <title>Tri-Region News Storm Center</title>
+        <meta name="description" content="The storm center for the local weather in the Tri-Region area.">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="shortcut icon" href="images/icon_favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,7 +57,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>Storm Information</legend>
-                    <label class="top">Storm Date <input type="date" placeholder="mm/dd/yyyy" name="stormDate"></label>
+                    <label class="top">Storm Date <input type="date" name="stormDate"></label>
                     <label class="top">Pick a Region: 
                         <select name="region">
                             <option value="">Please Select Region ... </option>
@@ -75,20 +75,20 @@
                             <option value="Tornado"></option>
                         </datalist>
                     </label>
-                    <label class="top">How Severe is it on a scale of 1 (mild) - 10 (extreme)? <input type="range" name="severe" id="severe" min="1" max="10" list="tickmarks" value="1"></label>
+                    <label class="top">How Severe is it on a scale of 1 (mild) - 10 (extreme)? <input type="range" name="severe" id="severe" min="1" max="10" list="tickmarks" value="1">
                         <datalist id="tickmarks">
                         <option value="1" label="1"></option>
-                        <option value="2"></option>
-                        <option value="3"></option>
-                        <option value="4"></option>
+                        <option value="2" label="2"></option>
+                        <option value="3" label="3"></option>
+                        <option value="4" label="4"></option>
                         <option value="5" label="5"></option>
-                        <option value="6"></option>
-                        <option value="7"></option>
-                        <option value="8"></option>
-                        <option value="9"></option>
+                        <option value="6" label="6"></option>
+                        <option value="7" label="7"></option>
+                        <option value="8" label="8"></option>
+                        <option value="9" label="9"></option>
                         <option value="10" label="10"></option>
                         </datalist>
-                    
+                    </label>
                 </fieldset>
                 <fieldset>
                     <legend>Additional Information</legend>
