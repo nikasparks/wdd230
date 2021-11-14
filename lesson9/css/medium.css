@@ -56,6 +56,17 @@ Author: Monika Meyers Related sheet: index.html
             font-size: 1rem;                    
         }
 
+        .homeAction h3 {
+            font-size: 1.2rem;
+        }
+
+        .homeAction{
+            top: 30px;
+            left: 30px;  
+            max-width: 100%;
+            font-size: 1rem;                    
+        }
+
         .article{
             max-width: 980px;
         }

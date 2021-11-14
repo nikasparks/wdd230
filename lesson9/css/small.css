@@ -97,13 +97,6 @@ ul{
     font-size: 1.5rem;
 }
 
-/* .navigation a {
-	display: block;
-	/* padding: 0.75rem; *
-	text-decoration: none;
-	transition: 0.5s;
-} */
-
 .active{font-weight: bold; text-shadow: 0px 0px 20px #00ffeb;}
 
 .responsive li {
@@ -112,6 +105,37 @@ ul{
 
 main{
     grid-template-columns: 1fr;
+}
+
+section .homeAction{margin: auto;}
+
+.homeAction h3{border-bottom: 1px solid #F4E8C1; font-size: 1rem;}
+
+.homeAction{
+    background-color: rgb(0, 124, 207);
+    box-shadow: 0 0 30px rgb(9, 0, 51);
+    text-align: left;
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    opacity: .85;
+    max-width: 60%;
+    font-size: .75rem;    
+}
+
+.callActoin{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.actionItems{
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+    margin: 1px;
+    padding: 1px;
 }
 
 .herodiv{
@@ -215,7 +239,6 @@ section .weatsum{margin: auto;}
 	background-color:#412234;
     margin: 10px auto;
 	padding: 10px;
-    
     justify-content: center;
 }
 
