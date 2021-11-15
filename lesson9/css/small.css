@@ -234,6 +234,52 @@ section .weatsum{margin: auto;}
     padding-top: 0.25rem;
 }
 
+/* * {padding: .35rem;} */
+div.townCards h2 span {
+    text-shadow:  5px 10px 10px #814266, -5px 10px 10px #814266, 5px -10px 10px #814266, -5px -10px 10px #814266;
+    text-align:center;
+    font-family: 'Walter Turncoat', cursive;
+}
+
+div.townCards .tMotto {
+    font-size: .9rem;
+    font-style: italic;
+    font-family: 'Walter Turncoat', cursive;
+}
+span.year, span.population, span.rainfall {
+    font-size: 0.8rem;
+    
+}
+
+div.townCards {
+    max-width: fit-content;
+    margin: .5rem auto;
+    background-color: #412234;
+    padding: 10px;
+}
+
+.townCards section {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #F4E8C1;
+
+}
+div.townCards p span {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.townCards article{
+    margin: auto;
+    padding: 0px;
+}
+
+.townCards img {
+    width: 90%; 
+    box-shadow: black 0 0 20px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
 .article{
     font-family: 'Open Sans', sans-serif;
 	background-color:#412234;

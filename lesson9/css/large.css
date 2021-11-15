@@ -16,6 +16,38 @@ Author: Monika Meyers Related sheet: index.html
         font-size: 1.5rem;
     }
 
+    div.townCards h2 span {
+        font-size: 2rem;
+    }
+    
+    div.townCards {
+        max-width: 980px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    div.townCards .tMotto {
+        font-size: 1.1rem;
+    }
+
+    .townCards section {
+        align-items: center;    
+        flex-direction: column;
+    }
+
+    .townCards section:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    span.year, span.population, span.rainfall {
+        font-size: 1.1rem;
+    }
+
+    .townCards img {
+        width: 90%;
+        margin: 20px;
+    }
+
     .gallery{
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 1050px;

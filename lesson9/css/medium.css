@@ -67,13 +67,33 @@ Author: Monika Meyers Related sheet: index.html
             font-size: 1rem;                    
         }
 
+        /* home town info*/
+
+        /* div.townCards {
+            max-width: 980px;
+        } */
+
+        .townCards section {
+            
+            flex-direction: row;
+        }
+
+        .townCards section:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        .townCards img {
+            width: 50%;
+            margin: 30px;
+        }
+        /* page articles */
+
         .article{
             max-width: 980px;
         }
 
         .article img{
             float: right;
-            
             max-width: 25%;
             margin: 0px 5px;
         }
