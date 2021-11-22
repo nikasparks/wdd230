@@ -18,6 +18,7 @@
         <script defer src="js/menu.js"></script>
         <script defer src="js/pancakes.js"></script>
         <script defer src="js/windchill.js"></script>
+        <script defer src="js/weatherapi.js"></script>
     </head>
     <body>
         <div class="pancakes">
@@ -48,19 +49,18 @@
             <h2>Preston Idaho</h2>
             <div class="herodiv">
                 <picture>
-                    <source srcset="images/franklin_medium-600w.webp" media="(min-width: 600px) and (max-width: 959px)">
-                    <source srcset="images/franklin_large-900w.webp" media="(min-width: 960px)">
-                    <img class="heropic" src="images/franklin_small-300w.webp" alt="Scene with mountains by a meadow.">
+                    <source srcset="images/preston-hero-picture-600w.webp 600w" media="(min-width: 600px) and (max-width: 959px)">
+                    <source srcset="images/preston-hero-picture-900w.webp 900w" media="(min-width: 960px)">
+                    <img class="heropic" src="images/preston-hero-picture-400w.webp 400w" alt="Scene with mountains by a lake.">
                 </picture>
-                    <!-- <img class="heropic" src="images/hero-picture.jpg" alt="Scene with mountains by a lake."> -->
                 <section class="weatsum">
                     <h3>Current Weather</h3>
                     <div class="weatinfo">
-                        <span class="lstats">Condition:</span><span class="rstats">Sunny</span>
-                        <span class="lstats" >Temprature:</span><span class="rstats" id="temp">45<span>℉</span></span>
+                        <span class="lstats">Condition:</span><span class="rstats" id="condition">Sunny</span>
+                        <span class="lstats" >Temprature:</span><span class="rstats" id="temp"></span>
                         <span class="lstats">Wind Chill:</span><span class="rstats" id="wcfactor">N/A</span>
-                        <span class="lstats">Humidity:</span><span class="rstats">48%</span>
-                        <span class="lstats">Wind Speed:</span><span class="rstats" id="wspeed">5 <span>mph</span></span>
+                        <span class="lstats">Humidity:</span><span class="rstats" id="humid">48%</span>
+                        <span class="lstats">Wind Speed:</span><span class="rstats" id="wspeed"> <span>mph</span></span>
                     </div>    
                 </section>
             </div>

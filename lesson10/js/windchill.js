@@ -5,7 +5,7 @@
 * Output(s):wind chill in F 
 */
  
-let temp=parseFloat(document.querySelector('#temp').textContent);
+let temp=parseFloat(document.querySelector('#current-temp').textContent);
 let wspeed=parseFloat(document.querySelector('#wspeed').textContent); 
 let wcfactor=windChill(temp, wspeed).toFixed(1);
 
