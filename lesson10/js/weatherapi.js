@@ -4,35 +4,41 @@ fetch(apiURL)
   .then((jsObject) => {
     console.log(jsObject);
 
-    const condition = document.querySelector('#condition');
-    const temp = document.querySelector('#temp');
-    const humid = document.querySelector('#humid');
-    const wspeed = document.querySelector('#wspeed');
-    
+    // const condition = document.querySelector('#condition');
+    // const temp = document.querySelector('#temp');
+    // const humid = document.querySelector('#humid');
+    // const wspeed = document.querySelector('#wspeed');
+    document.querySelector('#condition').textContent = jsObject.weather[0].main;
+    document.querySelector('#temp').textContent = `${jsObject.main.temp.toFixed(0)} ℉`;
+    document.querySelector('#humid').textContent = `${jsObject.main.humidity.toFixed(0)}%`;
+    document.querySelector('#wspeed').textContent = `${jsObject.wind.speed.toFixed(0)} mph`;
+    const temp = parseFloat(jsObject.main.temp.toFixed(0));
+    const wspeed = parseFloat(jsObject.wind.speed.toFixed(0));
+    const wcfactor = windChill(temp, wspeed);
     const weathericon = document.querySelector('#icon');
 
-    // currentTemp.textContent = jsObject.main.temp.toFixed(0);
-    let imgsrc =  `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-    let imgalt = jsObject.weather[0].description;
+  function windChill(temp, wspeed){
+    let wcfactor = 0
+    if (temp<=50 && wspeed>3){
+        wcfactor= 35.74 + 0.6215 * temp - 35.75 * wspeed**0.16 + 0.4275 * temp * wspeed**0.16
+    }
+    return wcfactor;
+  }
+
+    // let imgsrc =  `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+    // let imgalt = jsObject.weather[0].description;
 
     condition.textContent = jsObject.weather[0].main;
-    temp.textContent = `${jsObject.main.temp.toFixed(0)} ℉`;
+    // temp.textContent = `${jsObject.main.temp.toFixed(0)} ℉`;
     humid.textContent = `${jsObject.main.humidity.toFixed(0)}%`;
-    wspeed.textContent = `${jsObject.wind.speed.toFixed(0)} mph`;
+    // wspeed.textContent = `${jsObject.wind.speed.toFixed(0)} mph`;
 
-
-    weathericon.setAttribute('src', imgsrc);
-    weathericon.setAttribute('alt', imgalt);
-
-
-    function windChill(temp, wspeed){
-      let wcfactor = 0
-      if (temp<=50 && wspeed>3.0){
-          wcfactor= 35.74 + 0.6215 * temp - 35.75 * wspeed**0.16 + 0.4275 * temp * wspeed**0.16
-      }
-      return wcfactor;
-  }
+    // weathericon.setAttribute('src', imgsrc);
+    // weathericon.setAttribute('alt', imgalt);
   
-    document.querySelector('#wcfactor').innerHTML = `${wcfactor}℉`;
+  document.querySelector('#wcfactor').innerHTML = `${wcfactor.toFixed(1)}℉`;
 
   });
+
+
+
