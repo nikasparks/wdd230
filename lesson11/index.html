@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Preston Idaho Page</title>
-        <meta name="description" content="This is the town page Preston ID, part of the Tri-Region News Website">
+        <title>Tri-Region News Home</title>
+        <meta name="description" content="This is the main home page for the Tri-Region News. A local weather and news site for the residents in the Tri-Region area.">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="shortcut icon" href="images/icon_favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,19 +16,13 @@
 
         <script defer src="js/getDates.js"></script>
         <script defer src="js/menu.js"></script>
-        <script defer src="js/pancakes.js"></script>
-        <script defer src="js/weatherapi.js"></script>
-        <!-- <script defer src="js/windchill.js"></script> -->
-        
+        <script defer src="js/towninfo.js"></script>
+
     </head>
     <body>
-        <div class="pancakes">
-            <p>🥞Saturday = Preston Pancakes in the Park!🥞</p>
-            <p>🕘 9 a.m. Saturday at the city park.</p>
-        </div>
         <header>
             <picture>
-                <img src="images/weather_icon_256px_water.png" class="logo" alt="logo">
+                <img src="images/weather_icon_256px_water.png" class="logo" alt="Tri-region news logo">
             </picture>
             <section class="pagetitle">
                 <h1>Tri-Region News</h1>
@@ -38,81 +32,50 @@
             <nav>
                 <ul class="navlist">
                     <li><a class="ham" href="#">Menu</a></li>
-                    <li><a href="#" target="_blank" rel="noreferrer">Home</a></li>
-                    <li><a class="active" href="#" target="_blank" rel="noreferrer">Preston</a></li>
+                    <li><a class="active" href="/lesson9/index.html" target="_blank" rel="noreferrer">Home</a></li>
+                    <li><a href="/lesson6/preston-6.html" target="_blank" rel="noreferrer">Preston</a></li>
                     <li><a href="#" target="_blank" rel="noreferrer">Soda Springs</a></li>
                     <li><a href="#" target="_blank" rel="noreferrer">Fish Haven</a></li>
-                    <li><a href="#" target="_blank" rel="noreferrer">Storm Center</a></li>
+                    <li><a href="/lesson8/stormcenter.html" target="_blank" rel="noreferrer">Storm Center</a></li>
                     <li><a href="/lesson7/gallery-7.html" target="_blank" rel="noreferrer">Gallery</a></li>
                 </ul>
             </nav>
         <main>
-            <h2>Preston Idaho</h2>
+            <h2>Tri-Region Information</h2>
             <div class="herodiv">
                 <picture>
-                    <source srcset="images/preston-hero-picture-600w.webp 600w" media="(min-width: 600px) and (max-width: 959px)">
-                    <source srcset="images/preston-hero-picture-900w.webp 900w" media="(min-width: 960px)">
-                    <img class="heropic" src="images/preston-hero-picture-400w.webp" alt="Scene with mountains by a lake.">
+                    <source srcset="images/home-hero-pic-640w.jpg 640w" media="(min-width: 600px) and (max-width: 959px)">
+                    <source srcset="images/home-hero-pic-900w.jpg 900w" media="(min-width: 960px)">
+                    <img class="heropic" src="images/home-hero-pic-400w.jpg" alt="Scene with mountains by a meadow.">
                 </picture>
-                <section class="weatsum">
-                    <h3>Current Weather</h3>
-                    <div class="weatinfo">
-                        <span class="lstats">Condition:</span><span class="rstats" id="condition">Sunny</span>
-                        <span class="lstats" >Temprature:</span><span class="rstats" id="temp"></span>
-                        <span class="lstats">Wind Chill:</span><span class="rstats" id="wcfactor">N/A</span>
-                        <span class="lstats">Humidity:</span><span class="rstats" id="humid">48%</span>
-                        <span class="lstats">Wind Speed:</span><span class="rstats" id="wspeed"> </span>
+                <section class="homeAction">
+                    <h3>Welcome!</h3>
+                    <div class="callAction">
+                        <span class="actionItems">-Check out your town's page for up coming events.</span><br>
+                        <span class="actionItems" >-Go see the awesome pictures in the gallery.</span><br>
+                        <span class="actionItems">-Seen some crazy weather? Submit a form in the Storm Center.</span>
                     </div>    
                 </section>
             </div>
-            <div class="forecast">
-                <h3>Five Day Forecast</h3>
-                <div class="flex">
-                    <div class="flex-col">
-                        <span class="col-head" id="1stday">Monday</span>
-                        <img id="day1icon">
-                        <span class="condition" id="">Sunny 72°F</span>
-                    </div>
-                    <div class="flex-col">
-                        <span class="col-head" id="2ndday">Tuesday</span>
-                        <img id="day2icon">
-                        <span class="condition">Sunny 72°F</span>
-                    </div>
-                    <div class="flex-col">
-                        <span class="col-head" id="3rdday">Wednesday</span>
-                        <img id="day3icon">
-                        <span class="condition">Sunny 72°F</span>
-                    </div>
-                    <div class="flex-col">
-                        <span class="col-head" id="4thday">Thursday</span>
-                        <img id="day4icon">
-                        <span class="condition">Sunny 72°F</span>
-                    </div>
-                    <div class="flex-col">
-                        <span class="col-head" id="5thday">Friday</span>
-                        <img id="day5icon">
-                        <span class="condition">Sunny 72°F</span>
-                    </div>
-                </div>
-            </div>
+            <div class="townCards"></div>
             <div class="article">
-                <h3>Night Under the Stars</h3>
+                <h3>Where we came from</h3>
                 <picture>
-                    <source srcset="images/nightsky-600w.webp" media="(min-width: 600px) and (max-width: 959px)">
-                    <source srcset="images/nightsky-400w.webp" media="(min-width: 960px)">
-                    <img src="images/nightsky-200w.webp" alt="Looking up at the night sky">
+                    <source srcset="images/home-article-900w.jpg" media="(min-width: 600px) and (max-width: 959px)">
+                    <source srcset="images/home-article-640w.jpg" media="(min-width: 960px)">
+                    <img src="images/home-article-300w.jpg" alt="Looking up at the night sky">
                 </picture>
                 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec feugiat nisl pretium fusce. Vel quam elementum pulvinar etiam non quam lacus. Urna porttitor rhoncus dolor purus non enim praesent. Nibh venenatis cras sed felis. Porttitor leo a diam sollicitudin tempor id eu nisl nunc. Semper feugiat nibh sed pulvinar proin gravida. Et ultrices neque ornare aenean euismod elementum nisi quis. Facilisi etiam dignissim diam quis. Nisi lacus sed viverra tellus in hac habitasse. Ac orci phasellus egestas tellus rutrum. Risus quis varius quam quisque id diam. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Enim nec dui nunc mattis enim ut tellus elementum. Vitae auctor eu augue ut lectus arcu bibendum at varius. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Id cursus metus aliquam eleifend mi in.</p>
             </div>
             <div class="contactus">
                 <section>
-                    <h4>Contact Information</h4>
+                    <h3>Contact Information</h3>
                     <address>        
                       <a href="https://www.google.com/maps/place/Preston+City+Clerk,+70+W+Oneida+St,+Preston,+ID+83263/@42.0969734,-111.87854,18z/data=!4m6!1m3!3m2!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!2sPreston,+ID+83263!3m1!1s0x8754f7eb6e6de7d1:0x1c5be534f2217780" target="_blank" rel="noreferrer">70 W Oneida St, Preston, ID 83263
                       </a>
                     </address> 
-                    <a href="tel:1235557890">(123) 555-7890</a><br>
+                    <a href="tel:1235557890">(123) 555-7890</a>&emsp;&emsp;
                     <a href="mailto:help@triregion.org">help@triregion.org</a>
                     <div class="social">
                         <a href="https://twitter.com/" target="_blank" rel="noreferrer">
@@ -130,13 +93,10 @@
                     <img src="images/preston-map-400w.webp" alt="A map displaying the location of Preston.">
                   </div>      
             </div>
-           
         </main>
         <footer>
             <p>&copy; <span id="currentyear"></span> | Tri-Region News | Monika Meyers</p> 
-            Today's date:&ensp;<span id="currDate"></span><br>
-            Thanks to <a class="footerlink" href="https://openweathermap.org/" target="_blank" rel="noreferrer">Open Weather</a> for the use of their weather data.
+            Today's date:&emsp;<span id="currDate"></span>
         </footer>
-        
     </body>
 </html>
