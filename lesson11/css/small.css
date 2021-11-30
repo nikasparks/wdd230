@@ -56,13 +56,39 @@ h2{
 h3, h4 {
     font-size: 1.5rem;
 }
-.lastTime {
-    font-family: 'Walter Turncoat', cursive;
-    background-color: #2d3047;
-    margin: 0 auto;
-    font-size: 1.2rem;
 
+img {
+    padding: 20px;
+    margin: auto;
 }
+
+.logo {
+    max-width: 128px;
+}
+
+p{
+    padding: 5px;
+}
+
+P, footer, span {
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+}
+
+footer a {
+    color: #ffe9a1;
+    text-decoration-line: underline;
+    line-height: 1.9;
+}
+
+footer {
+    background-color: #2d3047;
+    flex: 0 1 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Navigation */
 nav {
     background-color: #2d3047;
     /* padding: 0.75rem; */
@@ -107,6 +133,8 @@ main{
     grid-template-columns: 1fr;
 }
 
+
+/* Home call to action */
 section .homeAction{margin: auto;}
 
 .homeAction h3{border-bottom: 1px solid #F4E8C1; font-size: 1rem;}
@@ -138,6 +166,7 @@ section .homeAction{margin: auto;}
     padding: 1px;
 }
 
+/* Hero Pics */
 .herodiv{
     position: relative;
     margin: auto;
@@ -154,21 +183,19 @@ section .homeAction{margin: auto;}
     padding: 0;
     box-shadow: 0 0 20px black;           
 }
+
+/* Current weather */
 section .weatsum{margin: auto;}
 
-.weatsum h3{border-bottom: 1px solid #F4E8C1; font-size: 1rem;}
+.weatsum h3{border-bottom: 1px solid #F4E8C1; font-size: 1.1rem;}
 
 .weatsum{
     background-color: rgb(0, 124, 207);
-    box-shadow: 0 0 30px rgb(9, 0, 51);
-    text-align: left;
-    padding: 5px;
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    opacity: .85;
+    box-shadow: 0 0 25px rgb(9, 0, 51);
+    margin: 10px auto;
+    padding: 5px 20px;
     max-width: 60%;
-    font-size: .75rem;    
+    font-size: .80rem;    
 }
 
 .weatinfo{ 
@@ -192,6 +219,31 @@ section .weatsum{margin: auto;}
     padding: 1px;
 }
 
+/* Town events  */
+section .eBoard{margin: auto;}
+
+.eBoard h3{
+    border-bottom: 1px solid #F4E8C1; 
+    font-size: 1rem;
+}
+
+.eBoard{
+    background-color: rgb(0, 124, 207);
+    box-shadow: 0 0 25px rgb(9, 0, 51);
+    margin: 10px auto;
+    padding: 5px 20px;
+    max-width: 60%;
+    font-size: .80rem;     
+}
+
+.eList{ 
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    /* column-gap: 10px; */
+    justify-content: center;
+}
+
+/* 5 day forcast */
 .forecast{
     font-family: 'Open Sans', sans-serif;
 	max-width: 980px;
@@ -229,12 +281,12 @@ section .weatsum{margin: auto;}
 }
    
 .flex img {
-    width: 40px;
-    height: auto; 
-    padding-top: 0.25rem;
+    width: 60px;
+    height: auto;
+    padding: 0px;
 }
 
-
+/* Town info on home page */
 div.townCards h2 span {
     text-shadow:  5px 10px 10px #814266, -5px 10px 10px #814266, 5px -10px 10px #814266, -5px -10px 10px #814266;
     text-align:center;
@@ -280,6 +332,8 @@ div.townCards p span {
     margin-bottom: 10px;
 }
 
+
+/* Articles */
 .article{
     font-family: 'Open Sans', sans-serif;
 	background-color:#412234;
@@ -301,6 +355,7 @@ div.townCards p span {
     
 }
 
+/* Contact us */
 .contactus{
     font-family: 'Open Sans', sans-serif;
     max-width: 980px;
@@ -337,6 +392,8 @@ a {
     color: #F4E8C1;
 }
 
+
+/* Storm center form */
 form {
     margin: auto;
     max-width: 600px;
@@ -397,16 +454,9 @@ div.danger,.topadd {
     margin: auto;
     padding: 0px;
 }
-/* label.sbs [type="radio"] {
-    margin-left: 220px;
-} */
-
-
 
 label.top input[type=range]{
-    /* display: flex; */
-    width: 500px;
-   
+    width: 500px;   
 }
 
 /* datalist#tickmarks {
@@ -449,6 +499,15 @@ form label.top input:required:valid{
     border-left: 0px;
 }
 
+/* vist count Gallery */
+.lastTime {
+    font-family: 'Walter Turncoat', cursive;
+    background-color: #2d3047;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+/* Gallery */
 .gallery{
     display: grid;
     grid-template-columns: 1fr;
@@ -479,38 +538,6 @@ form label.top input:required:valid{
     max-width: 300px;
     margin: 5% 7%;
     box-shadow: 0px 0px 30px 2px #F4E8C1;
-    display: inline-block;
-    
+    display: inline-block;    
 }
 
-img {
-    padding: 20px;
-    margin: auto;
-}
-
-.logo {
-    max-width: 128px;
-}
-
-p{
-    padding: 5px;
-}
-
-P, footer, span {
-    font-family: 'Open Sans', sans-serif;
-    margin: auto;
-}
-
-footer a {
-    color: #ffe9a1;
-    text-decoration-line: underline;
-    line-height: 1.9;
-}
-
-footer {
-    background-color: #2d3047;
-    flex: 0 1 100%;
-    /* max-width: 980px; */
-    margin: 0 auto;
-    padding: 10px;
-}
