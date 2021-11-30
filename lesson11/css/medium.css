@@ -69,6 +69,10 @@ Author: Monika Meyers Related sheet: index.html
         }
         /* Town events  */
 
+        .eBoard h3 {
+            font-size: 1.2rem;
+        }
+
         .eBoard{
             background-color: rgb(0, 124, 207);
             box-shadow: 0 0 30px rgb(9, 0, 51);
@@ -87,6 +91,12 @@ Author: Monika Meyers Related sheet: index.html
         }
 
         .homeAction{
+            background-color: rgb(0, 124, 207);
+            box-shadow: 0 0 30px rgb(9, 0, 51);
+            text-align: left;
+            padding: 5px;
+            position: absolute;
+            opacity: .85;  
             top: 30px;
             left: 30px;  
             max-width: 100%;

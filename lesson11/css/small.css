@@ -50,7 +50,7 @@ h1 {
 h2{
     font-size: 2rem;
     padding: 10px;
-    margin-top: 10px;
+    margin: 10px auto;
 }
 
 h3, h4 {
@@ -141,23 +141,14 @@ section .homeAction{margin: auto;}
 
 .homeAction{
     background-color: rgb(0, 124, 207);
-    box-shadow: 0 0 30px rgb(9, 0, 51);
-    text-align: left;
-    padding: 5px;
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    opacity: .85;
+    box-shadow: 0 0 25px rgb(9, 0, 51);
+    margin: 10px auto;
+    padding: 5px 20px;
     max-width: 60%;
-    font-size: .75rem;    
+    font-size: .80rem;      
 }
 
-.callActoin{ 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    justify-content: center;
-}
+
 
 .actionItems{
     font-family: 'Open Sans', sans-serif;
@@ -237,9 +228,6 @@ section .eBoard{margin: auto;}
 }
 
 .eList{ 
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-    /* column-gap: 10px; */
     justify-content: center;
 }
 
