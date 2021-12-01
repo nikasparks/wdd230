@@ -15,12 +15,12 @@ if (title === "Preston Idaho"){
   cityURLfor = 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&APPID=478880ddcd6c3a44883f6715e5d40bf3'
   // city = "5585010"
 };
-// const apiURL = `https://api.openweathermap.org/data/2.5/weather?${city}&units=imperial&APPID=478880ddcd6c3a44883f6715e5d40bf3`;  
+
 const apiURL = cityURL;
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    
 
     document.querySelector('#condition').textContent = jsObject.weather[0].main;
     document.querySelector('#temp').textContent = `${jsObject.main.temp.toFixed(0)} ℉`;
@@ -42,15 +42,14 @@ fetch(apiURL)
   document.querySelector('#wcfactor').innerHTML = wcfactor;
   });
 
-// const apiURLfor = 'https://api.openweathermap.org/data/2.5/forecast?${city}&units=imperial&APPID=478880ddcd6c3a44883f6715e5d40bf3'
+
 const apiURLfor = cityURLfor;
 fetch(apiURLfor)
   .then((response) => response.json())
   .then((jsObject) => {
-    // console.log(jsObject);
     
     const six =  jsObject.list.filter(only => only.dt_txt.includes('18:00:00'));
-    // console.log(six);
+    
 
     const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     let day = 0;

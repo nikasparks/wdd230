@@ -9,11 +9,11 @@ fetch(requestURL)
     }
   })
   .then(function (jsonObject) {
-    // console.table(jsonObject); temporary checking for valid response and data parsing
+    
     const townInfo = jsonObject['towns'];
 
     const only = townInfo.filter((town) => town.name === 'Preston' || town.name === 'Fish Haven' || town.name === 'Soda Springs');
-    console.log(only);
+    
 
     only.forEach(town => {
         //create the card with the elements for the information
