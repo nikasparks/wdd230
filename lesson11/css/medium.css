@@ -56,8 +56,6 @@ Author: Monika Meyers Related sheet: index.html
             font-size: 1rem;                    
         }
         .weatsum{
-            background-color: rgb(0, 124, 207);
-            box-shadow: 0 0 30px rgb(9, 0, 51);
             text-align: left;
             padding: 5px;
             position: absolute;
@@ -74,8 +72,6 @@ Author: Monika Meyers Related sheet: index.html
         }
 
         .eBoard{
-            background-color: rgb(0, 124, 207);
-            box-shadow: 0 0 30px rgb(9, 0, 51);
             text-align: left;
             padding: 5px;
             position: absolute;
@@ -91,8 +87,6 @@ Author: Monika Meyers Related sheet: index.html
         }
 
         .homeAction{
-            background-color: rgb(0, 124, 207);
-            box-shadow: 0 0 30px rgb(9, 0, 51);
             text-align: left;
             padding: 5px;
             position: absolute;
