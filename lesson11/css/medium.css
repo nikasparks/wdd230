@@ -67,6 +67,7 @@ Author: Monika Meyers Related sheet: index.html
         }
         /* Town events  */
 
+        
         .eBoard h3 {
             font-size: 1.2rem;
         }
@@ -163,5 +164,5 @@ Author: Monika Meyers Related sheet: index.html
             align-items: center;
         }
         
-
+/* comment */
 }
