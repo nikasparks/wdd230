@@ -34,6 +34,7 @@ fetch(requestURL)
         rainFall.innerHTML = `<span class="rainfall"> Rain Fall: ${town.averageRainfall}</span>`;
         image.setAttribute('src', `images/${town.photo}`);
         image.setAttribute('alt', `Image of ${town.name}`);
+        image.setAttribute('width', '400');
         image.setAttribute('loading', 'lazy');
         //Create the card
         info.appendChild(h2);
