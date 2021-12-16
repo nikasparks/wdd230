@@ -1,29 +1,11 @@
 {
     "directory":[
         {
-            "name": "Anytime Fitness",
-            "address":"742 S HWY 198, Payson, UT 84651",
-            "phone":"(801) 400-6549",
-            "website":"https://www.anytimefitness.com/gyms/3891/Payson-UT-84651/?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=3891",
-            "icon":"Anytime-Fitness-logo-512x288.jpg"
-        },{
             "name": "Ace Hardware",
             "address":"84 E Utah Ave, Payson, UT 84651",
             "phone":"(801) 465-3722",
             "website":"http://www.acehardware.com/store-details/16061?utm_source=google&utm_medium=localstore&utm_campaign=",
             "icon":"ACE-512x512.jpg"
-        },{
-            "name": "SportsClips",
-            "address":"855 S Turf Farm Road Suite D, Payson, Utah 84651",
-            "phone":"(801) 900-5675",
-            "website":"http://www.haircutmenpaysonut.com",
-            "icon":"SportsClips-512x122.jpg"
-        },{
-            "name": "Excel Chiropractic and Accident Specialists",
-            "address":"814 S 1040 W, Payson, UT 84651",
-            "phone":"(385) 404-5489",
-            "website":"http://www.excelchiropayson.com",
-            "icon":"excel-chiropractic-logo.jpg"
         },{
             "name": "America First Credit Union",
             "address":"763 W. Hwy 198, Payson, UT 84651",
@@ -31,11 +13,29 @@
             "website":"http://www.americafirst.com",
             "icon":"AFCU-logo-1-512x165.jpg"
         },{
+            "name": "Anytime Fitness",
+            "address":"742 S HWY 198, Payson, UT 84651",
+            "phone":"(801) 400-6549",
+            "website":"https://www.anytimefitness.com/gyms/3891/Payson-UT-84651/?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=3891",
+            "icon":"Anytime-Fitness-logo-512x288.jpg"
+        },{
             "name": "Behling Insurance",
             "address":"861 S 500 W, Payson, UT 84651",
             "phone":"(801)465-4893",
             "website":"https://www.behlinginsurance.com",
             "icon":"Behling-Lognew-512x151.jpg"
+        },{
+            "name": "Excel Chiropractic and Accident Specialists",
+            "address":"814 S 1040 W, Payson, UT 84651",
+            "phone":"(385) 404-5489",
+            "website":"http://www.excelchiropayson.com",
+            "icon":"excel-chiropractic-logo.jpg"
+        },{
+            "name": "SportsClips",
+            "address":"855 S Turf Farm Road Suite D, Payson, Utah 84651",
+            "phone":"(801) 900-5675",
+            "website":"http://www.haircutmenpaysonut.com",
+            "icon":"SportsClips-512x122.jpg"
         },{
             "name": "Utah Balloon Creations",
             "address":"1434 S 730 W St, Payson, UT 84651",

@@ -23,10 +23,6 @@ Author: Monika Meyers Related sheet: index.html
         .navlist li:first-child {
             display: none;
         }
-
-        header{
-            max-width: 1000px;
-        }
         
         h1 {
             font-size: 2rem;
@@ -69,9 +65,8 @@ Author: Monika Meyers Related sheet: index.html
 
         div.home {
             display: grid;
-            grid-template-columns: 1.5fr 1fr;
+            grid-template-columns: 1fr 1fr;
             max-width: 980px;
-            margin: auto;
         }
         
         .eBoard h3 {
@@ -94,14 +89,20 @@ Author: Monika Meyers Related sheet: index.html
             top: 10px;
             left: 20px;  
             max-width: 90%;
-            font-size: 1rem;                    
+            font-size: 1rem;
+            margin: 10px auto;                    
+        }
+
+        .heropic {
+            margin: 10px auto;
         }
 
         /* home town info*/
-
-        /* div.townCards {
+        div.townCards {
             max-width: 980px;
-        } */
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
         .gridengage section {
             max-width: 400px;
             margin: 10px;
@@ -112,9 +113,7 @@ Author: Monika Meyers Related sheet: index.html
         }
         /* page articles */
 
-        .article{
-            max-width: 980px;
-        }
+
 
         .article img{
             float: left;
