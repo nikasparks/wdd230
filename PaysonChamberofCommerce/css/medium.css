@@ -64,6 +64,10 @@ Author: Monika Meyers Related sheet: index.html
             margin: auto 10px;
         }
 
+        .weatinfosm{
+            display: none;
+        }
+
         .weaticon {
             max-width: 10%;
             padding: 0px;

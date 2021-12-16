@@ -31,34 +31,58 @@ fetch(apiURL)
      document.querySelector('div.weatinfo').appendChild(humid);
      document.querySelector('div.weatinfo').appendChild(cond);
      document.querySelector('div.weatinfo').appendChild(image);
+
+     let curTempsm = document.createElement('p');
+     let condsm = document.createElement('p');
+     let humidsm = document.createElement('p');
+     let imagesm = document.createElement('img');
+
+     //get info from the JSON file
+     curTempsm.innerHTML = `Temprature:<br>${jsObject.current.temp}`;
+     condsm.innerHTML = `Condition:<br>${jsObject.current.weather[0].main}`;
+     humidsm.innerHTML = `Humidity:<br>${jsObject.current.humidity}`;
+     imagesm.setAttribute('src', `images/${jsObject.current.weather[0].icon}-wh.png`);
+     imagesm.setAttribute('alt', `Image of ${jsObject.current.weather[0].main} icon`);
+     imagesm.setAttribute('class', 'weaticon');
+
+     imagesm.setAttribute('loading', 'lazy');
+     curTempsm.setAttribute('class', 'curTemp');
+     condsm.setAttribute('class', 'cond');
+     humidsm.setAttribute('class', 'humid');
+
+
+     document.querySelector('div.weatinfosm').appendChild(curTempsm);
+     document.querySelector('div.weatinfosm').appendChild(humidsm);
+     document.querySelector('div.weatinfosm').appendChild(condsm);
+     document.querySelector('div.weatinfosm').appendChild(imagesm);
     });
 
-fetch(apiURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
+// fetch(apiURL)
+//   .then((response) => response.json())
+//   .then((jsObject) => {
     
-    // const day =  jsObject.list.filter(only => only.dt_txt.includes('18:00:00'));
-    const daily = jsObject['daily'];
+//     // const day =  jsObject.list.filter(only => only.dt_txt.includes('18:00:00'));
+//     const daily = jsObject['daily'];
 
-    const weekdays = ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'];
-    let day = 0;
-    // daily.forEach(forecast => {
-    for (i=0; i < 3; i++){
-      let thedate = new Date(daily.dt);
-      let theOweek = document.createElement('h2');
-      let futTemp = document.createElement('p');
-      let futcond = document.createElement('p');
-      let futicon = document.createElement('img');
-      let card = document.createElement('section')
-      
+//     const weekdays = ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'];
+//     let day = 0;
+//     // daily.forEach(forecast => {
+//     for (i=0; i < 3; i++){
+//       let thedate = new Date(daily.dt);
+//       let theOweek = document.createElement('h2');
+//       let futTemp = document.createElement('p');
+//       let futcond = document.createElement('p');
+//       let futicon = document.createElement('img');
+//       let card = document.createElement('section')
 
-      theOweek.innerHTML = `${}`; 
-      document.querySelector(`#day${day+1}`).textContent = weekdays[thedate.getDay()];
-      document.querySelector(`#day${day+1}condtemp`).textContent = `${forecast.weather[0].main} ${forecast.main.temp.toFixed(0)}℉`;
-      document.querySelector(`#day${day+1}icon`).setAttribute('src', `images/${forecast.weather[0].icon}-wh.png`);
-      document.querySelector(`#day${day+1}icon`).setAttribute('alt', forecast.weather[0].description);
-      day++;
+
+//       theOweek.innerHTML = `${}`; 
+//       document.querySelector(`#day${day+1}`).textContent = weekdays[thedate.getDay()];
+//       document.querySelector(`#day${day+1}condtemp`).textContent = `${forecast.weather[0].main} ${forecast.main.temp.toFixed(0)}℉`;
+//       document.querySelector(`#day${day+1}icon`).setAttribute('src', `images/${forecast.weather[0].icon}-wh.png`);
+//       document.querySelector(`#day${day+1}icon`).setAttribute('alt', forecast.weather[0].description);
+//       day++;
       
-    };
-  });
+//     };
+  // });
     

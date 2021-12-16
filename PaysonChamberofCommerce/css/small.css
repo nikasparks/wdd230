@@ -216,12 +216,22 @@ section .weatsum{margin: auto;}
     max-width: 87%;
     font-size: .80rem;    
 }
+.weatinfo{
+    display: flex;
+    flex-direction: row;
+    margin: auto 10px;
+}
 
-.weatinfo{ 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.weaticon {
+    max-width: 10%;
+    padding: 0px;
+    margin: auto 5px;
+}
+.weatinfosm{ 
+    display: flex;
+    /* grid-template-columns: 1fr 1fr;
     column-gap: 10px;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .lstats{
