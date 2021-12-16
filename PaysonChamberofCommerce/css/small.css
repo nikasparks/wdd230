@@ -1,3 +1,7 @@
+        /*
+Author: Monika Meyers Related sheet: index.html
+*/
+
 :root{
     --header-font: 'Marcellus SC', serif;
     --body-font: 'Podkova', serif;
@@ -18,15 +22,6 @@ body{
     text-align: center;
 }
 
-.pancakes {
-    display: none;
-    margin: 0;
-    padding: 0.25rem 0;
-    background-color: rgb(0, 124, 207);
-    text-align: center;
-    font-size: 0.95rem;
-  }
-
 header, h1, h2, h3, h4{
     font-family: var(--header-font);
     padding: 5px;
@@ -40,11 +35,6 @@ header{
     display: flex;
     flex-wrap: wrap;
 }
-
-/* header.home {
-    margin: auto auto auto 20px;
-    justify-content: flex-start;
-} */
 
 .pagtitle{
     display: flex;
@@ -256,20 +246,6 @@ section .weatsum{margin: auto;}
     justify-content: center; */
 }
 
-.lstats{
-    font-family: var(--body-font);
-    text-align: right;
-    margin: 1px;
-    padding: 1px;
-}
-
-.rstats{
-    font-family: var(--body-font);
-    text-align: left;
-    margin: 1px;
-    padding: 1px;
-}
-
 /* Town events  */
 section .eBoard{margin: auto;}
 
@@ -298,39 +274,6 @@ section .eBoard{margin: auto;}
     margin: 10px auto;
 	padding: 10px;
     
-}
-
-.flex{
-    display: flex;
-    flex-flow: row wrap;
-}
-  
-.flex-col {
-    flex: 1 1 auto;
-    background-color: var(--blue);
-    text-align: center;
-    border-right: 1px solid var(--light);
-    border-bottom: 1px solid var(--light);
-    border-left: 1px solid var(--light);
-}
-  
-.col-head, .condition {
-    display: block;
-    background-color: var(--blue);
-    text-align: center;
-    padding: 0.25rem 0;
-    font-size: 1rem;
-}
-  
-.col-head {
-    border-top: 1px solid var(--light);
-    border-bottom: 1px solid var(--light);
-}
-   
-.flex img {
-    width: 60px;
-    height: auto;
-    padding: 0px;
 }
 
 .direct h2 {
@@ -483,7 +426,6 @@ div.townCards p span {
     font-family: var(--body-font);
 	background-color:var(--dk-blue);
     margin: 10px auto;
-	/* padding: 10px; */
     justify-content: center;    
     box-shadow: 0 0 25px rgb(9, 0, 51);
     padding: 5px 20px;
@@ -557,7 +499,7 @@ a {
 }
 
 
-/* Storm center form */
+/* form */
 .requestsent {
     font-size: 1.3rem;
     background-color: var(--blue);
@@ -667,47 +609,3 @@ form label.top input:required:valid{
     border-bottom: darkgreen solid 6px;
     border-left: 0px;
 }
-
-/* vist count Gallery */
-.lastTime {
-    font-family: var(--header-font);
-    background-color: #2d3047;
-    margin: 0 auto;
-    font-size: 1.2rem;
-}
-
-/* Gallery */
-.gallery{
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: baseline;
-    justify-items: center;
-    margin: auto;
-}
-
-.gallery img[data-src] {
-    filter: blur(0.2em);
-}
-
-.gallery img {
-    padding:0px;
-    max-width: 100%;
-    filter: blur(0em);
-    transition: filter 0.5s;
-    
-}
-.pic p{
-    background-color: var(--dk-blue);
-    align-items: center;
-    padding-bottom: 10px;
-    padding-top: 3px;
-}
-.pic {
-    background-color: var(--dk-blue);
-    max-width: 300px;
-    margin: 5% 7%;
-    box-shadow: 0px 0px 30px 2px var(--light);
-    display: inline-block;    
-}
-
-/* comment */

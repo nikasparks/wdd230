@@ -30,9 +30,6 @@ Author: Monika Meyers Related sheet: index.html
         h1 {
             font-size: 1.4rem;
         }
-        /* h3{
-            font-size: 1.2rem;
-        } */
 
         .motto {
             letter-spacing: 1.5pt;
@@ -86,18 +83,6 @@ Author: Monika Meyers Related sheet: index.html
             display: none;
         }
 
-        /* .fweaticon {
-            max-width: 10%;
-            padding: 0px;
-            margin: auto 5px;
-        }
-
-        .weaticon {
-            max-width: 10%;
-            padding: 0px;
-            margin: auto 5px;
-        } */
-
         .weatsum{
             top: 30px;
             left: 30px;  
@@ -126,10 +111,6 @@ Author: Monika Meyers Related sheet: index.html
         .eBoard h3 {
             font-size: 1.2rem;
         }
-
-        /* .eBoard{
-            max-width: 90%;  
-        } */
 
         .homeAction h3 {
             font-size: 1.2rem;
@@ -187,14 +168,6 @@ Author: Monika Meyers Related sheet: index.html
             font-size: 2.3rem;
         }
     
-
-        .gallery{
-            grid-template-columns: 1fr 1fr;
-        }
-
-
-
-
         .social{
             text-align: left;
         }
@@ -210,8 +183,6 @@ Author: Monika Meyers Related sheet: index.html
         }
 
         .contactinfo {
-            /* display: grid;
-            grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr; */
             text-align: left;
             margin: auto;
         }
@@ -224,5 +195,4 @@ Author: Monika Meyers Related sheet: index.html
     
         }
         
-/* comment */
 }
