@@ -54,7 +54,7 @@ fetch(apiURLfor)
     const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     let day = 0;
     six.forEach(forecast => {
-      let thedate = new Date(forecast.dt_txt);
+      let thedate = new Date((forecast.dt)/86400000);
       
       document.querySelector(`#day${day+1}`).textContent = weekdays[thedate.getDay()];
       document.querySelector(`#day${day+1}condtemp`).textContent = `${forecast.weather[0].main} ${forecast.main.temp.toFixed(0)}℉`;

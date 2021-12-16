@@ -53,26 +53,50 @@ Author: Monika Meyers Related sheet: index.html
         }
 
         .wide h2 {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin: auto;
             padding: 4px;
             border-bottom: solid 1px var(--light);
         }
-        .weatinfo{
+
+        .wide h3 {
+            font-size: 1rem;
+            margin: auto;
+            padding: 4px;
+            border-bottom: solid 1px var(--light);
+        }
+
+        .dayforecast section {
+            display: flex;
+        }
+
+        .dayforecast{
+            display: flex;
+            flex-direction: column;
+            margin: auto 20px auto 0px;
+        }
+
+        .weatinfo section {
             display: flex;
             flex-direction: row;
-            margin: auto 10px;
+            margin: auto 20px auto 0px;
         }
 
         .weatinfosm{
             display: none;
         }
 
-        .weaticon {
+        /* .fweaticon {
             max-width: 10%;
             padding: 0px;
             margin: auto 5px;
         }
+
+        .weaticon {
+            max-width: 10%;
+            padding: 0px;
+            margin: auto 5px;
+        } */
 
         .weatsum{
             top: 30px;
