@@ -28,7 +28,7 @@ Author: Monika Meyers Related sheet: index.html
         }
         
         h1 {
-            font-size: 2rem;
+            font-size: 1.4rem;
         }
         /* h3{
             font-size: 1.2rem;
@@ -36,7 +36,7 @@ Author: Monika Meyers Related sheet: index.html
 
         .motto {
             letter-spacing: 1.5pt;
-            font-size: larger;
+            font-size: 0.9rem;
         }
 
         .logo {
@@ -45,7 +45,7 @@ Author: Monika Meyers Related sheet: index.html
         }
 
         .wide {
-            margin-left: 50px;
+            margin: auto;
             display: block;
             border-radius: 10px;
             border: solid  1px var(--light);
