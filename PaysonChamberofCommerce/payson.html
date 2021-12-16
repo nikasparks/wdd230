@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Preston Idaho Page</title>
+        <meta name="description" content="This is the town page for Preston ID, part of the Tri-Region News Website">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kotta+One&family=Marcellus+SC&family=Podkova&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+
+        <script defer src="js/getDates.js"></script>
+        <script defer src="js/menu.js"></script>
+        <script defer src="js/pancakes.js"></script>
+        <script defer src="js/weatherapi.js"></script>
+        <script defer src="js/townevents.js"></script>
+        
+    </head>
+    <body>
+        <div class="pancakes">
+            <p>🥞Saturday = Preston Pancakes in the Park!🥞</p>
+            <p>🕘 9 a.m. Saturday at the city park.</p>
+        </div>
+        <header>
+            <picture>
+                <img src="images/icon-valley-100.png" class="logo" alt="Payson Chamber of Commerce logo">
+            </picture>
+            <section class="pagetitle">
+                <h1>Payson Chamber of Commerce</h1>
+                <q class="motto">Doing Business With People You Know, Like And Trust</q>
+            </section>
+        </header>
+            <nav>
+                <ul class="navlist">
+                    <li><a class="ham" href="#">Menu</a></li>
+                    <li><a href="index.html" target="_self" rel="noreferrer">Home</a></li>
+                    <li><a class="active" href="payson.html" target="_self" rel="noreferrer">Payson</a></li>
+                    <li><a href="membership.html" target="_self" rel="noreferrer">Join up!</a></li>
+                    <li><a href="directory.html" target="_self" rel="noreferrer">Directory</a></li>
+                    <li><a href="contactus.html" target="_self" rel="noreferrer">Contact Us</a></li>
+                </ul>
+            </nav>
+        <main>
+            <h2 class="cityName">Preston Idaho</h2>
+            <div class="herodiv">
+                <picture>
+                    <source srcset="images/preston-hero-picture-600w.webp 600w" sizes="600px" media="(min-width: 600px) and (max-width: 959px)">
+                    <source srcset="images/preston-hero-picture-900w.webp 900w" sizes="900px" media="(min-width: 960px)">
+                    <img class="heropic" src="images/preston-hero-picture-400w.webp" width="400" alt="Scene of a green valley.">
+                </picture>
+                <section class="weatsum">
+                    <h3>Current Weather</h3>
+                    <div class="weatinfo">
+                        <span class="lstats">Condition:</span><span class="rstats" id="condition">Sunny</span>
+                        <span class="lstats" >Temprature:</span><span class="rstats" id="temp"></span>
+                        <span class="lstats">Wind Chill:</span><span class="rstats" id="wcfactor">N/A</span>
+                        <span class="lstats">Humidity:</span><span class="rstats" id="humid">48%</span>
+                        <span class="lstats">Wind Speed:</span><span class="rstats" id="wspeed"> </span>
+                    </div>    
+                </section>
+                <section class="eBoard">
+                    <h3>Up Coming Events</h3>
+                    <div class="eList"></div>
+                </section>
+            </div>
+            <div class="article">
+                <h3>Night Under the Stars</h3>
+                <picture>
+                    <source srcset="images/preston-nightsky-600w.webp 600w" sizes="600px" media="(min-width: 600px) and (max-width: 959px)">
+                    <source srcset="images/preston-nightsky-400w.webp 400w" sizes="400px" media="(min-width: 960px)">
+                    <img src="images/preston-nightsky-200w.webp" width="200" alt="Looking up at the night sky">
+                </picture>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec feugiat nisl pretium fusce. Vel quam elementum pulvinar etiam non quam lacus. Urna porttitor rhoncus dolor purus non enim praesent. Nibh venenatis cras sed felis. Porttitor leo a diam sollicitudin tempor id eu nisl nunc. Semper feugiat nibh sed pulvinar proin gravida. Et ultrices neque ornare aenean euismod elementum nisi quis. Facilisi etiam dignissim diam quis. Nisi lacus sed viverra tellus in hac habitasse. Ac orci phasellus egestas tellus rutrum. Risus quis varius quam quisque id diam. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Enim nec dui nunc mattis enim ut tellus elementum. Vitae auctor eu augue ut lectus arcu bibendum at varius. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Id cursus metus aliquam eleifend mi in.</p>
+            </div>
+            
+           
+        </main>
+        <footer>
+            <div class="footlinks">
+                <section class="contactinfo">
+                    <p>Contact Info</p>
+                    <address>        
+                        <a href="https://goo.gl/maps/W4hpgdEdSsUdDLrv7" target="_self" rel="noreferrer">22 S Main St Payson, UT 84651</a>
+                    </address> 
+                    <a href="tel:8014652634">(801) 465-2634</a>
+                    <div class="social">
+                        <a href="https://twitter.com/" target="_self" rel="noreferrer">
+                            <img src="images/twitter-100w.webp" alt="twitter logo"/></a>
+                        <a href="https://www.instagram.com/" target="_self" rel="noreferrer">
+                            <img src="images/insta-100w.webp" alt="instgram logo"/></a>
+                        <a href="https://www.facebook.com/" target="_self" rel="noreferrer">
+                            <img src="images/facebook-100w.webp" alt="facebook logo"/></a>
+                    </div>
+                </section>
+            </div>
+            <p>&copy; <span id="currentyear"></span> | Tri-Region News | Monika Meyers</p> 
+            Today's date:&ensp;<span id="currDate"></span><br>
+            Thanks to <a class="footerlink" href="https://openweathermap.org/" target="_self" rel="noreferrer">Open Weather</a> for the use of their weather data.
+        </footer>
+        
+    </body>
+</html>

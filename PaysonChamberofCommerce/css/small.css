@@ -1,0 +1,618 @@
+:root{
+    --header-font: 'Marcellus SC', serif;
+    --body-font: 'Podkova', serif;
+    --spec-font: 'Kotta One', serif;
+    --dark:  #22292F;
+    --light: #EDFFF9;
+    --lt-green: #89BFA3;
+    --green:#3D6E4E;
+    --dk-green:#283E2F;
+    --lt-blue:#89B1D1;
+    --blue: #466C9B;
+    --dk-blue: #2A3C50;    
+}
+
+body{
+    background-color: var(--dk-green);
+    color: var(--light);
+    text-align: center;
+}
+
+.pancakes {
+    display: none;
+    margin: 0;
+    padding: 0.25rem 0;
+    background-color: rgb(0, 124, 207);
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+header, h1, h2, h3, h4{
+    font-family: var(--header-font);
+    padding: 5px;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+}
+
+header{
+    max-width: 980px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pagtitle{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.motto{
+    font-family: var(--spec-font);
+    font-weight: bold;
+    letter-spacing: 1pt;
+    font-size: 1rem;
+    padding: 1px;
+}
+
+h1 {
+    font-size: 2rem;
+    
+}
+
+h2{
+    font-size: 2rem;
+    padding: 10px 10px 15px;
+    margin: 10px auto 15px;
+}
+
+h3, h4 {
+    font-size: 1.5rem;
+}
+
+img {
+    padding: 20px;
+    margin: auto;
+}
+
+.logo {
+    max-width: 128px;
+    padding: 0px;
+}
+
+p{
+    padding: 5px;
+}
+
+P, footer, span {
+    font-family: var(--body-font);
+    margin: auto;
+}
+
+footer a {
+    color: var(--light);
+    text-decoration-line: underline;
+    line-height: 1.9;
+}
+
+footer {
+    background-color: var(--green);
+    flex: 0 1 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--green);
+    /* padding: 0.75rem; */
+    /* max-width: 980px; */
+    margin: 0 auto;
+}
+
+ul{
+    padding: 0;
+    margin: auto;
+}
+
+.navlist{
+    list-style: none;
+    padding: 20px;
+}
+
+.navlist li{
+    font-family: var(--header-font);
+    font-size: 1rem;
+    padding: 10px;
+    display: none;
+}
+
+.navlist a:hover{
+    background-color: var(--lt-green);
+    padding: 5px;
+}
+
+.navlist li:first-child{
+    display: block;
+    font-size: 1.5rem;
+}
+
+.active{font-weight: bold; text-shadow: 0px 0px 20px #00ffeb;}
+
+.responsive li {
+	display: block;
+}
+
+main{
+    grid-template-columns: 1fr;
+}
+
+
+/* Home call to action */
+section .homeAction{margin: auto;}
+
+.homeAction h3{border-bottom: 1px solid var(--light); font-size: 1rem;}
+
+.homeAction{
+    background-color: var(--dk-blue);
+    box-shadow: 0 0 25px rgb(9, 0, 51);
+    margin: 10px auto;
+    padding: 5px 20px;
+    max-width: 60%;
+    font-size: .80rem;      
+}
+
+
+
+.actionItems{
+    font-family: var(--body-font);
+    text-align: right;
+    margin: 1px;
+    padding: 1px;
+}
+
+/* Hero Pics */
+.herodiv{
+    position: relative;
+    margin: auto;
+    padding: 1px;
+    max-width: 980px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heropic{
+    margin: 10px auto;
+    width: 98%; 
+    padding: 0;
+    box-shadow: 0 0 20px black;           
+}
+
+/* Current weather */
+section .weatsum{margin: auto;}
+
+.weatsum h3{border-bottom: 1px solid var(--light); font-size: 1.1rem;}
+
+.weatsum{
+    background-color: var(--dk-blue);
+    box-shadow: 0 0 25px rgb(9, 0, 51);
+    margin: 10px auto;
+    padding: 5px 20px;
+    max-width: 60%;
+    font-size: .80rem;    
+}
+
+.weatinfo{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.lstats{
+    font-family: var(--body-font);
+    text-align: right;
+    margin: 1px;
+    padding: 1px;
+}
+
+.rstats{
+    font-family: var(--body-font);
+    text-align: left;
+    margin: 1px;
+    padding: 1px;
+}
+
+/* Town events  */
+section .eBoard{margin: auto;}
+
+.eBoard h3{
+    border-bottom: 1px solid var(--light); 
+    font-size: 1rem;
+}
+
+.eBoard{
+    background-color: var(--dk-blue);
+    box-shadow: 0 0 25px rgb(9, 0, 51);
+    margin: 10px auto;
+    padding: 5px 20px;
+    max-width: 60%;
+    font-size: .80rem;     
+}
+
+.eList{ 
+    justify-content: center;
+}
+
+/* 5 day forcast */
+.forecast{
+    font-family: var(--body-font);
+	max-width: 980px;
+	background-color:var(--blue);
+    margin: 10px auto;
+	padding: 10px;
+    
+}
+
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+  
+.flex-col {
+    flex: 1 1 auto;
+    background-color: var(--blue);
+    text-align: center;
+    border-right: 1px solid var(--light);
+    border-bottom: 1px solid var(--light);
+    border-left: 1px solid var(--light);
+}
+  
+.col-head, .condition {
+    display: block;
+    background-color: var(--blue);
+    text-align: center;
+    padding: 0.25rem 0;
+    font-size: 1rem;
+}
+  
+.col-head {
+    border-top: 1px solid var(--light);
+    border-bottom: 1px solid var(--light);
+}
+   
+.flex img {
+    width: 60px;
+    height: auto;
+    padding: 0px;
+}
+
+
+
+div.businessCards {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    margin: auto;
+}
+.list {
+    position: absolute;
+    top: -80px;
+    right: 60px;
+}
+
+.grid {
+    position: absolute;
+    top: -80px;
+    right: 5px;
+}
+
+.gridengage section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue);
+    /* max-width: 300px; */
+}
+
+.listengage section {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--blue);
+    /* max-width: 300px; */
+}
+
+.businessCards h2{
+    font-size: 1.2rem;
+    padding: 5px;
+    margin: auto;
+}
+
+.businessCards p{
+    font-size: 0.9rem;
+}
+
+.businessCards img {
+    height: 50px;
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Town info on home page */
+div.townCards h2 span {
+    text-shadow:  5px 10px 10px var(--blue), -5px 10px 10px var(--blue), 5px -10px 10px var(--blue), -5px -10px 10px var(--blue);
+    text-align:center;
+    font-family: var(--header-font);
+}
+
+div.townCards .tMotto {
+    font-size: .9rem;
+    font-style: italic;
+    font-family: var(--header-font);
+}
+
+div.townCards {
+    max-width: fit-content;
+    margin: .5rem auto;
+    background-color: var(--dk-blue);
+    padding: 10px;
+    /* color: var(--dark); */
+}
+
+.townCards section {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--light);
+
+}
+div.townCards p span {
+    font-family: var(--body-font);
+}
+
+.townCards article{
+    margin: auto;
+    padding: 0px;
+}
+
+.townCards img {
+    width: 90%; 
+    box-shadow: black 0 0 20px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+
+/* Articles */
+.article{
+    font-family: var(--body-font);
+	background-color:var(--dk-blue);
+    margin: 10px auto;
+	padding: 10px;
+    justify-content: center;
+}
+
+.article p{
+    text-align: left;
+    line-height: normal;
+}
+
+.article img{
+    margin: 10px auto;
+    width: 75%;
+    padding: 0;
+    box-shadow: 0 0 20px black;
+    
+}
+
+.contactinfo p{
+    font-family: var(--header-font);
+}
+/* Contact us */
+.contactus, .memberapp{
+    font-family: var(--body-font);
+    max-width: 980px;
+    background-color: var(--blue);
+    margin: 10px auto 20px;
+    padding: 10px;
+    
+}
+div.contactus, div.memberapp{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items:center;
+    justify-items: center;
+}
+div.contactus li{
+    font-size: 1.3rem ;
+}
+
+.contactus a {
+    line-height: 2;
+    font-size: 1.3rem;
+}
+
+.map{
+    display:block;
+    margin: 10px auto;
+    padding: 0;
+    box-shadow: 0 0 20px black;
+    width: 90%;
+}
+
+
+.social {
+    text-align: center;
+}
+  
+.social a {
+    text-decoration: none;
+}
+
+.social img {
+    width: 7%;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration-line: none;
+    color: var(--light);
+}
+
+
+/* Storm center form */
+.requestsent {
+    font-size: 1.3rem;
+    background-color: var(--blue);
+    max-width: 1000px;
+    margin: 20px auto;
+}
+.memberapp fieldset{
+    max-width: 800px;
+}
+
+.memberlevel {
+    margin: 0px 5px 0px 15px;
+}
+
+.memberlevel h3{ 
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.memberlevel p {
+    font-size: 1.5rem;
+    padding-right: 15px;
+    margin-bottom: 15px;
+}
+
+form input[type="radio"] {
+    width: 20px;
+    height: 15px;
+}
+
+form {
+    margin: auto;
+    width: 400px;
+}
+
+form fieldset{
+    text-align: left;
+    margin: 2rem 0;
+    border: 1px solid var(--light);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: var(--dk-blue);
+    align-items: stretch;
+
+}
+
+form label.top, form div, .contactus textarea, .memberapp textarea{
+    display: block;
+    padding-top: 1rem;
+    color: var(--light);
+    font-size: 1.2rem;
+    margin-left: 10px;
+    max-width: 21rem;
+}
+
+form label.top input, form label.top select{
+    -webkit-transition-property: none;
+    border-left: var(--light) 6px;
+    transition-property: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--light);
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: var(--light);
+    
+}
+
+div.contmethod,.topadd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: var(--light);
+}
+
+form label.topadd {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+}
+
+form label.top input:required{
+    border-left: darkred solid 6px;
+}
+
+form label.top input:required:valid{
+    border-bottom: darkgreen solid 6px;
+    border-left: 0px;
+}
+
+/* vist count Gallery */
+.lastTime {
+    font-family: var(--header-font);
+    background-color: #2d3047;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+/* Gallery */
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: baseline;
+    justify-items: center;
+    margin: auto;
+}
+
+.gallery img[data-src] {
+    filter: blur(0.2em);
+}
+
+.gallery img {
+    padding:0px;
+    max-width: 100%;
+    filter: blur(0em);
+    transition: filter 0.5s;
+    
+}
+.pic p{
+    background-color: var(--dk-blue);
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 3px;
+}
+.pic {
+    background-color: var(--dk-blue);
+    max-width: 300px;
+    margin: 5% 7%;
+    box-shadow: 0px 0px 30px 2px var(--light);
+    display: inline-block;    
+}
+
+/* comment */

@@ -1,0 +1,166 @@
+        /*
+Author: Monika Meyers Related sheet: index.html
+*/
+
+@media only screen and (min-width: 37.5em){
+
+
+       /* nav ul { display: flex; }
+		nav ul li { flex: 1 1 100%; }*/
+
+        .navlist {
+            display: flex;
+            align-items: center;
+        }
+        .navlist li {
+            display: block; 
+            flex: 1 1 auto;
+            font-size: 1.4rem;
+        }
+        .navlist a { 
+            text-align: center;
+        }
+        .navlist li:first-child {
+            display: none;
+        }
+
+        header{
+            max-width: 1000px;
+        }
+        
+        h1 {
+            font-size: 2rem;
+        }
+        /* h3{
+            font-size: 1.2rem;
+        } */
+
+        .motto {
+            letter-spacing: 1.5pt;
+            font-size: larger;
+        }
+
+        .logo {
+            float: left;
+            
+        }
+        
+        .weatsum h3 {
+            font-size: 1.2rem;
+        }
+
+        .weatsum{
+            top: 30px;
+            left: 30px;  
+            max-width: 100%;
+            font-size: 1rem;                    
+        }
+        .weatsum{
+            text-align: left;
+            padding: 5px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            opacity: .85;
+            max-width: 60%;
+            font-size: .75rem;    
+        }
+        /* Town events  */
+
+        
+        .eBoard h3 {
+            font-size: 1.2rem;
+        }
+
+        .eBoard{
+            text-align: left;
+            padding: 5px;
+            position: absolute;
+            bottom: 30px;
+            right: 20px;
+            opacity: .85;
+            max-width: 60%;
+            font-size: .75rem;    
+        }
+
+        .homeAction h3 {
+            font-size: 1.2rem;
+        }
+
+        .homeAction{
+            text-align: left;
+            padding: 5px;
+            position: absolute;
+            opacity: .85;  
+            top: 30px;
+            left: 30px;  
+            max-width: 100%;
+            font-size: 1rem;                    
+        }
+
+        /* home town info*/
+
+        /* div.townCards {
+            max-width: 980px;
+        } */
+
+
+        /* page articles */
+
+        .article{
+            max-width: 980px;
+        }
+
+        .article img{
+            float: right;
+            max-width: 25%;
+            margin: 0px 5px;
+        }
+
+        .lastTime {
+            font-size: 1.3rem;
+        }
+
+        h2.gal {
+            font-size: 2.3rem;
+        }
+    
+
+        .gallery{
+            grid-template-columns: 1fr 1fr;
+        }
+
+
+
+
+        .social{
+            text-align: left;
+        }
+
+        .social img {
+            max-width: 30px;
+            padding: 20px;
+        }
+
+        .footlinks{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .contactinfo {
+            /* display: grid;
+            grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr; */
+            text-align: left;
+            margin: auto;
+        }
+
+
+
+        div.contactus, div.memberapp{
+            text-align: left;
+            grid-template-columns: 1fr 1fr;
+    
+        }
+        
+/* comment */
+}

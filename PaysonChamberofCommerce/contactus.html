@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Contact Us</title>
+        <meta name="description" content="Send a message to the Payson Utah chamber of commerce.  Address for and directions to our head quarters.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kotta+One&family=Marcellus+SC&family=Podkova&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+
+        <script defer src="js/getDates.js"></script>
+        <script defer src="js/menu.js"></script>
+        <script defer src="js/weatherapi.js"></script>
+        <script defer src="js/townevents.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <picture>
+                <img src="images/icon-valley-100.png" class="logo" alt="Payson Chamber of Commerce logo">
+            </picture>
+            <section class="pagetitle">
+                <h1>Payson Chamber of Commerce</h1>
+                <q class="motto">Doing Business With People You Know, Like And Trust</q>
+            </section>
+        </header>
+            <nav>
+                <ul class="navlist">
+                    <li><a class="ham" href="#">Menu</a></li>
+                    <li><a href="index.html" target="_self" rel="noreferrer">Home</a></li>
+                    <li><a href="payson.html" target="_self" rel="noreferrer">Payson</a></li>
+                    <li><a href="membership.html" target="_self" rel="noreferrer">Join up!</a></li>
+                    <li><a href="directory.html" target="_self" rel="noreferrer">Directory</a></li>
+                    <li><a class="active" href="contactus.html" target="_self" rel="noreferrer">Contact Us</a></li>
+                </ul>
+            </nav>
+        <main>
+            <h2 class="cityName">Contact Us!</h2>
+            <div class="herodiv">
+                <picture>
+                    <source srcset="images/celebrate-group-500x250.jpg 500w" sizes="500px" media="(min-width: 600px) and (max-width: 959px)">
+                    <source srcset="images/celebrate-group-800x400.jpg 800w" sizes="800px" media="(min-width: 960px)">
+                    <img class="heropic" src="images/celebrate-group-300x150.jpg" width="300" alt="Group of people celebrating a success.">
+                </picture>
+            </div>
+            <div class="contactus">
+                <section>
+                    <div class="maps">
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6108.873615615305!2d-111.732552!3d40.043352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874da4419ba0b4f3%3A0x2a20ac33e6f04bb!2s22%20S%20Main%20St%2C%20Payson%2C%20UT%2084651!5e0!3m2!1sen!2sus!4v1639566141833!5m2!1sen!2sus" width="300" height="150" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <h3>Payson Chamber of Commerce</h3>
+                    <div class="addtel">
+                        <address>        
+                        <a href="https://goo.gl/maps/W4hpgdEdSsUdDLrv7" target="_self" rel="noreferrer">22 S Main St <br> Payson, UT 84651
+                        </a>
+                        </address> 
+                        <a href="tel:8014652634">(801) 465-2634</a><br>
+                    </div>
+                    <h4>Executive Board of Directors</h4>
+                    <li>Ben Glazner - President</li>
+                    <li>Stephanie Taylor - President-Elect</li>
+                    <li>Jim Rowland - Treasurer</li>
+                    <li>Michelle Lines - Director</li>
+                </section>
+                <form method="get" action="contactusthanks.html">
+                    <fieldset>
+                        <label class="top">Full Name*<input type="text" name="fullname" placeholder="First Last" pattern="[A-Za-z]{5,}" required></label>
+                        <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                        
+                        <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                        <div>Prefered Contact Method*</div>
+                        <div class="contmethod">
+                            <label class="sbs"><input type="radio" name="contmethod" value="phone" required> Phone</label>
+                            <label class="sbs"><input type="radio" name="contmethod" value="email" required> Email</label>
+                        </div>
+                        <div class="top">Comments </div>
+                        <textarea name="comments" id="comments" cols="30" rows="6"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Send Message" class="submitBtn">
+                </form>        
+            </div>
+           
+        </main>
+        <footer>
+            <div class="footlinks">
+                <section class="contactinfo">
+                    <p>Contact Info</p>
+                    <address>        
+                        <a href="https://goo.gl/maps/W4hpgdEdSsUdDLrv7" target="_self" rel="noreferrer">22 S Main St Payson, UT 84651</a>
+                    </address> 
+                    <a href="tel:8014652634">(801) 465-2634</a>
+                    <div class="social">
+                        <a href="https://twitter.com/" target="_self" rel="noreferrer">
+                            <img src="images/twitter-100w.webp" alt="twitter logo"/></a>
+                        <a href="https://www.instagram.com/" target="_self" rel="noreferrer">
+                            <img src="images/insta-100w.webp" alt="instgram logo"/></a>
+                        <a href="https://www.facebook.com/" target="_self" rel="noreferrer">
+                            <img src="images/facebook-100w.webp" alt="facebook logo"/></a>
+                    </div>
+                </section>
+            </div>
+            <p>&copy; <span id="currentyear"></span> | Payson Chamber of Commerce</p> 
+            Today's date:&ensp;<span id="currDate"></span><br>
+        </footer>
+        
+    </body>
+</html>

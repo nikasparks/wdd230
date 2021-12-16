@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Join Up</title>
+        <meta name="description" content="Submit a membership application for the Payson Utah chamber of commerce.  Take advantage for all the benefits we have to offer your company today!">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kotta+One&family=Marcellus+SC&family=Podkova&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+
+        <script defer src="js/getDates.js"></script>
+        <script defer src="js/menu.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <picture>
+                <img src="images/icon-valley-100.png" class="logo" alt="Payson Chamber of Commerce logo">
+            </picture>
+            <section class="pagetitle">
+                <h1>Payson Chamber of Commerce</h1>
+                <q class="motto">Doing Business With People You Know, Like And Trust</q>
+            </section>
+        </header>
+            <nav>
+                <ul class="navlist">
+                    <li><a class="ham" href="#">Menu</a></li>
+                    <li><a href="index.html" target="_self" rel="noreferrer">Home</a></li>
+                    <li><a href="payson.html" target="_self" rel="noreferrer">Payson</a></li>
+                    <li><a class="active" href="membership.html" target="_self" rel="noreferrer">Join up!</a></li>
+                    <li><a href="directory.html" target="_self" rel="noreferrer">Directory</a></li>
+                    <li><a href="contactus.html" target="_self" rel="noreferrer">Contact Us</a></li>
+                </ul>
+            </nav>
+        <main>
+            <h2>Submit Your Application</h2>
+            <div class="memberapp">
+                <form method="get" action="membershipthanks.html">
+                    <fieldset>
+                        <div>Applicant's Information</div>
+                        <label class="top">First Name*<input type="text" name="firstname" placeholder="First Name" pattern="[A-Za-z]{5,}" required></label>
+                        <label class="top">Last Name*<input type="text" name="lastname" placeholder="Last Name" pattern="[A-Za-z]{5,}" required></label>
+                        <label class="top">Title<input type="text" name="title" placeholder="Owner" pattern="[A-Za-z]{5,}"></label>
+                        <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label class="top">Cell Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+                        <label class="top">Business Name*<input type="text" name="busname" placeholder="Petetneet Museum" required></label>
+                        <label class="top">Title<input type="text" name="title" placeholder="Owner" pattern="[A-Za-z]{5,}"></label>
+                        <label class="top">Business Address<input type="text" name="busaddress" placeholder="123 West 350 North, Payson, UT 12345" ></label>
+                        <label class="top">Business Website<input type="url" name="website" placeholder="" ></label>
+                        <div class="top">Business Description</div>
+                        <textarea name="addInfo" id="addInfo" cols="30" rows="6"></textarea>
+                        
+                    </fieldset>
+                    <fieldset>
+                        <div>Membership Level</div>
+                        <div class="memberlevel">
+                            <label class="sbs"><input type="radio" name="memberlevel" value="100" required> Non-profit ($100)</label>
+                            <label class="sbs"><input type="radio" name="memberlevel" value="200" required> Bronze ($200)</label>
+                            <label class="sbs"><input type="radio" name="memberlevel" value="300" required> Silver ($400)</label>
+                            <label class="sbs"><input type="radio" name="memberlevel" value="400" required> Gold ($1000)</label>
+                        </div>
+                    </fieldset>
+        
+                    <input type="submit" value="Send Application" class="submitBtn">
+                </form>
+                <section class="memberlevel">
+                    <h3>Membership Level Benefits</h3>
+                    <p>Non-profit ($100) - Invitation to our monthly breakfast club.  A training and networking event. Booth space at annual shop local events. Online directory listing on chamber website.  Ribbon Cuttings. </p>
+                    <p>Bronze ($200) - Everything from previous levels. Busniness logo displayed on chamber website and social media outlets.</p>
+                    <p>Silver ($400) - Everything from previous levels. Tickets to annual award banquet.  No rental fee for use of chamber party equipment.</p>
+                    <p>Gold ($1000) - Everything from previous levels. Personal interview to go on Facebook and YouTube.  Sponsorship, booth and banner at all chamber events.  A seat at Mayor’s executive council.</p>
+                </section>
+            </div>
+           
+        </main>
+        <footer>
+            <div class="footlinks">
+                <section class="contactinfo">
+                    <p>Contact Info</p>
+                    <address>        
+                        <a href="https://goo.gl/maps/W4hpgdEdSsUdDLrv7" target="_self" rel="noreferrer">22 S Main St Payson, UT 84651</a>
+                    </address> 
+                    <a href="tel:8014652634">(801) 465-2634</a>
+                    <div class="social">
+                        <a href="https://twitter.com/" target="_self" rel="noreferrer">
+                            <img src="images/twitter-100w.webp" alt="twitter logo"/></a>
+                        <a href="https://www.instagram.com/" target="_self" rel="noreferrer">
+                            <img src="images/insta-100w.webp" alt="instgram logo"/></a>
+                        <a href="https://www.facebook.com/" target="_self" rel="noreferrer">
+                            <img src="images/facebook-100w.webp" alt="facebook logo"/></a>
+                    </div>
+                </section>
+            </div>
+            <p>&copy; <span id="currentyear"></span> | Tri-Region News | Monika Meyers</p> 
+            Today's date:&emsp;<span id="currDate"></span>
+        </footer>
+    </body>
+</html>
