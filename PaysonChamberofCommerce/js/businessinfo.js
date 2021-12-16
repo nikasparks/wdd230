@@ -24,7 +24,7 @@ fetch(requestURL)
 
         //get info from the JSON file
         h2.innerHTML = `<span class="tName"> ${business.name}</span>`;
-        address.innerHTML = `<span class="year"> 📍: ${business.address}</span>`;
+        address.innerHTML = `<span class="busAddress"> 📍: ${business.address}</span>`;
         phone.innerHTML = `<span class="phone"> 📞: ${business.phone}</span>`;
         website.innerHTML = `<span class="website"><a href="${business.website}" target="_self" rel="noreferrer"> 🌐: ${business.name}</span>`;
         image.setAttribute('src', `images/${business.icon}`);

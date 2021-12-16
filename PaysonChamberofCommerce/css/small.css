@@ -41,10 +41,10 @@ header{
     flex-wrap: wrap;
 }
 
-header.home {
+/* header.home {
     margin: auto auto auto 20px;
     justify-content: flex-start;
-}
+} */
 
 .pagtitle{
     display: flex;
@@ -200,7 +200,9 @@ section .homeAction{margin: auto;}
     padding: 0;
     box-shadow: 0 0 20px black;           
 }
-
+.wide {
+    display: none;
+}
 /* Current weather */
 section .weatsum{margin: auto;}
 
@@ -211,7 +213,7 @@ section .weatsum{margin: auto;}
     box-shadow: 0 0 25px rgb(9, 0, 51);
     margin: 10px auto;
     padding: 5px 20px;
-    max-width: 60%;
+    max-width: 87%;
     font-size: .80rem;    
 }
 

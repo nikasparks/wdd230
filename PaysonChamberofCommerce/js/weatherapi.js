@@ -1,67 +1,64 @@
-let cityURL = ""; 
-let cityURLfor = "";
-// let city = "";
-let title = document.querySelector("h2").textContent;
-if (title === "Preston Idaho"){
-  cityURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=478880ddcd6c3a44883f6715e5d40bf3'
-  cityURLfor = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=478880ddcd6c3a44883f6715e5d40bf3'
-  // city = "5604473"
-}else if (title === "Soda Springs Idaho"){ 
-  cityURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=478880ddcd6c3a44883f6715e5d40bf3'
-  cityURLfor = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&APPID=478880ddcd6c3a44883f6715e5d40bf3'
-  // city = "5607916"
-}else if (title === "Fish Haven Idaho"){
-  cityURL = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&APPID=478880ddcd6c3a44883f6715e5d40bf3'
-  cityURLfor = 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&APPID=478880ddcd6c3a44883f6715e5d40bf3'
-  // city = "5585010"
-};
 
-const apiURL = cityURL;
+// payson lat:40.044540 long:-111.732262
+const apiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=40.04&lon=-111.73&exclude=minutely,hourly&units=imperial&appid=478880ddcd6c3a44883f6715e5d40bf3';
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     
 
-    document.querySelector('#condition').textContent = jsObject.weather[0].main;
-    document.querySelector('#temp').textContent = `${jsObject.main.temp.toFixed(0)} ℉`;
-    document.querySelector('#humid').textContent = `${jsObject.main.humidity.toFixed(0)}%`;
-    document.querySelector('#wspeed').textContent = `${jsObject.wind.speed.toFixed(0)} mph`;
-    // const temp = parseFloat(jsObject.main.temp.toFixed(0));
-    // const wspeed = parseFloat(jsObject.wind.speed.toFixed(0));
-    const wcfactor = windChill(jsObject.main.temp, jsObject.wind.speed);
+     //create the card with the elements for the information
+     let curTemp = document.createElement('p');
+     let cond = document.createElement('p');
+     let humid = document.createElement('p');
+     let image = document.createElement('img');
 
-  function windChill(temp, wspeed){
-    let wcfactor = 0
-    if (temp<=50 && wspeed>3){
-        wcfactor= 35.74 + 0.6215 * temp - 35.75 * wspeed**0.16 + 0.4275 * temp * wspeed**0.16
-        wcfactor= `${wcfactor.toFixed(0)}℉`
-    }else{wcfactor= "N/A"}
-    
-    return wcfactor;
-  }
-  document.querySelector('#wcfactor').innerHTML = wcfactor;
-  });
+     //get info from the JSON file
+     curTemp.innerHTML = `Temprature:<br>${jsObject.current.temp}`;
+     cond.innerHTML = `Condition:<br>${jsObject.current.weather[0].main}`;
+     humid.innerHTML = `Humidity:<br>${jsObject.current.humidity}`;
+     image.setAttribute('src', `images/${jsObject.current.weather[0].icon}-wh.png`);
+     image.setAttribute('alt', `Image of ${jsObject.current.weather[0].main} icon`);
+     image.setAttribute('class', 'weaticon');
 
+     image.setAttribute('loading', 'lazy');
+     curTemp.setAttribute('class', 'curTemp');
+     cond.setAttribute('class', 'cond');
+     humid.setAttribute('class', 'humid');
 
-const apiURLfor = cityURLfor;
-fetch(apiURLfor)
+     
+     //send to html on page
+     document.querySelector('div.weatinfo').appendChild(curTemp);
+     document.querySelector('div.weatinfo').appendChild(humid);
+     document.querySelector('div.weatinfo').appendChild(cond);
+     document.querySelector('div.weatinfo').appendChild(image);
+    });
+
+fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     
-    const six =  jsObject.list.filter(only => only.dt_txt.includes('18:00:00'));
-    
+    // const day =  jsObject.list.filter(only => only.dt_txt.includes('18:00:00'));
+    const daily = jsObject['daily'];
 
-    const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const weekdays = ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'];
     let day = 0;
-    six.forEach(forecast => {
-      let thedate = new Date(forecast.dt_txt);
+    // daily.forEach(forecast => {
+    for (i=0; i < 3; i++){
+      let thedate = new Date(daily.dt);
+      let theOweek = document.createElement('h2');
+      let futTemp = document.createElement('p');
+      let futcond = document.createElement('p');
+      let futicon = document.createElement('img');
+      let card = document.createElement('section')
       
+
+      theOweek.innerHTML = `${}`; 
       document.querySelector(`#day${day+1}`).textContent = weekdays[thedate.getDay()];
       document.querySelector(`#day${day+1}condtemp`).textContent = `${forecast.weather[0].main} ${forecast.main.temp.toFixed(0)}℉`;
       document.querySelector(`#day${day+1}icon`).setAttribute('src', `images/${forecast.weather[0].icon}-wh.png`);
       document.querySelector(`#day${day+1}icon`).setAttribute('alt', forecast.weather[0].description);
       day++;
       
-    });
+    };
   });
     

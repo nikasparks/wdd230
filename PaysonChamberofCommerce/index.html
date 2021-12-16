@@ -20,6 +20,7 @@
         <script defer src="js/getDates.js"></script>
         <script defer src="js/menu.js"></script>
         <script defer src="js/businessinfo.js"></script>
+        <script defer src="js/weatherapi.js"></script>
 
     </head>
     <body>
@@ -30,6 +31,13 @@
             <section class="pagetitle">
                 <h1>Payson Chamber of Commerce</h1>
                 <q class="motto">Doing Business With People You Know, Like And Trust</q>
+            </section>
+            <section class="wide">
+                <h2>Current Weather</h2>
+                <div class="weatinfo"></div>
+            </section>
+            <section>
+                <div class="3dayforcast"></div>
             </section>
         </header>
             <nav>
@@ -58,6 +66,13 @@
                         </div>    
                     </section>
                 </div>
+                <section class="weatsum">
+                    <h3>Current Weather</h3>
+                    <div class="weatinfo">
+                        <span class="lstats">Condition:</span><span class="rstats" id="condition">Sunny</span>
+                        <span class="lstats" >Temprature:</span><span class="rstats" id="temp"></span>
+                        <span class="lstats">Humidity:</span><span class="rstats" id="humid">48%</span>
+                </section>
                 <section class="eBoard">
                     <h3>Up Coming Events</h3>
                     <div class="eList"></div>
