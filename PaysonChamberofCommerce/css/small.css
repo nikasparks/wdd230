@@ -200,6 +200,12 @@ section .homeAction{margin: auto;}
     padding: 0;
     box-shadow: 0 0 20px black;           
 }
+.heropicp{
+    margin: 10px auto 10px;
+    width: 98%; 
+    padding: 0;
+    box-shadow: 0 0 20px black;           
+}
 .wide {
     display: none;
 }
@@ -457,6 +463,28 @@ div.townCards p span {
     
 }
 
+.harticle{
+    font-family: var(--body-font);
+	background-color:var(--dk-blue);
+    margin: 10px auto;
+	/* padding: 10px; */
+    justify-content: center;    
+    box-shadow: 0 0 25px rgb(9, 0, 51);
+    padding: 5px 20px;
+    max-width: 980px;
+}
+
+.harticle p{
+    text-align: left;
+    line-height: normal;
+}
+
+.harticle img{
+    margin: 10px auto;
+    width: 75%;
+    padding: 0;
+    box-shadow: 0 0 20px black;
+}
 .contactinfo p{
     font-family: var(--header-font);
 }

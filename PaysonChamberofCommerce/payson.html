@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Preston Idaho Page</title>
-        <meta name="description" content="This is the town page for Preston ID, part of the Tri-Region News Website">
+        <title>Payson City Information</title>
+        <meta name="description" content="Just little bit about our town's history and demographics.  A little of what makes Payson a wonderful place to live and work.">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +20,8 @@
         <script defer src="js/getDates.js"></script>
         <script defer src="js/menu.js"></script>
         <script defer src="js/pancakes.js"></script>
-        <script defer src="js/weatherapi.js"></script>
-        <script defer src="js/townevents.js"></script>
+        <!-- <script defer src="js/weatherapi.js"></script> -->
+        <script defer src="js/businessinfo.js"></script>
         
     </head>
     <body>
@@ -49,37 +49,42 @@
                 </ul>
             </nav>
         <main>
-            <h2 class="cityName">Preston Idaho</h2>
+            <h2 class="cityName">Payson Utah</h2>
             <div class="herodiv">
                 <picture>
-                    <source srcset="images/preston-hero-picture-600w.webp 600w" sizes="600px" media="(min-width: 600px) and (max-width: 959px)">
-                    <source srcset="images/preston-hero-picture-900w.webp 900w" sizes="900px" media="(min-width: 960px)">
-                    <img class="heropic" src="images/preston-hero-picture-400w.webp" width="400" alt="Scene of a green valley.">
-                </picture>
-                <section class="weatsum">
-                    <h3>Current Weather</h3>
-                    <div class="weatinfo">
-                        <span class="lstats">Condition:</span><span class="rstats" id="condition">Sunny</span>
-                        <span class="lstats" >Temprature:</span><span class="rstats" id="temp"></span>
-                        <span class="lstats">Wind Chill:</span><span class="rstats" id="wcfactor">N/A</span>
-                        <span class="lstats">Humidity:</span><span class="rstats" id="humid">48%</span>
-                        <span class="lstats">Wind Speed:</span><span class="rstats" id="wspeed"> </span>
-                    </div>    
+                    <source srcset="images/field-500x244.jpg 500w" sizes="500px" media="(min-width: 600px) and (max-width: 959px)">
+                    <source srcset="images/field-800x391.jpg 800w" sizes="800px" media="(min-width: 960px)">
+                    <img class="heropicp" src="images/field-300x147.jpg" width="300" alt="Scene of a green valley.">
+                </picture>  
                 </section>
                 <section class="eBoard">
                     <h3>Up Coming Events</h3>
                     <div class="eList"></div>
                 </section>
             </div>
-            <div class="article">
-                <h3>Night Under the Stars</h3>
+            <div class="harticle">
+                <h3>A Little Background</h3>
                 <picture>
-                    <source srcset="images/preston-nightsky-600w.webp 600w" sizes="600px" media="(min-width: 600px) and (max-width: 959px)">
-                    <source srcset="images/preston-nightsky-400w.webp 400w" sizes="400px" media="(min-width: 960px)">
-                    <img src="images/preston-nightsky-200w.webp" width="200" alt="Looking up at the night sky">
+                    <source srcset="images/scottish-800x640.jpg 800w" sizes="800px" media="(min-width: 600px) and (max-width: 959px)">
+                    <source srcset="images/scottish-500x400.jpg 500w" sizes="500px" media="(min-width: 960px)">
+                    <img class="scott" src="images/scottish-300x240.jpg" width="300" alt="Looking up at the night sky">
                 </picture>
                 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec feugiat nisl pretium fusce. Vel quam elementum pulvinar etiam non quam lacus. Urna porttitor rhoncus dolor purus non enim praesent. Nibh venenatis cras sed felis. Porttitor leo a diam sollicitudin tempor id eu nisl nunc. Semper feugiat nibh sed pulvinar proin gravida. Et ultrices neque ornare aenean euismod elementum nisi quis. Facilisi etiam dignissim diam quis. Nisi lacus sed viverra tellus in hac habitasse. Ac orci phasellus egestas tellus rutrum. Risus quis varius quam quisque id diam. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Enim nec dui nunc mattis enim ut tellus elementum. Vitae auctor eu augue ut lectus arcu bibendum at varius. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Id cursus metus aliquam eleifend mi in.</p>
+                <p>Payson (population 12,716), a community in central Utah, nestles against the foothills of the southern Wasatch Range in the Rocky Mountains. Three days after the first pioneers arrived in the Valley of the Great Salt Lake in 1847, Brigham Young sent a scouting party south into Utah Valley. <br><br>
+
+                They returned with reports of the location of Utah Lake and several streams that emptied into it from sources in the majestic mountains, noting that the soil was fertile and well adapted to cultivation. Clumps of trees grew along the Peteetneet, a stream that flowed from the canyon across the gentle slope to Utah Lake. <br><br>
+                
+                The 16 Mormon pioneers who colonized the area in October 1850, found sage and sunflowers as far as the eye could see. They built Fort Peteetneet, which evolved into the City of Payson, on a portion of the grounds where the Ute Indians had hunted and fished for countless years. <br><br>
+                
+                This was not the first time white men had traversed the land. Father Sylvestre Veliz de Escalante and his party had stopped at the creek where Payson, Utah, was to be located in 1776, shortly after the Declaration of Independence was adopted. An account of their experiences is found in a journal kept by Father Escalante, published in 1909 and kept in the archives of the National Historical Library in Mexico City. <br><br>
+                
+                One of the most recognized buildings in Payson is the Peteetneet Academy, a Romanesque elementary school erected in 1901, and one of the first schools in Utah outside of Salt Lake City. When it was abandoned by the school district in 1988, citizens rallied to restore the landmark to productive use within the community.<br><br>
+                
+                Today the facility is used as a cultural arts center and local history museum, and is a gateway interpretive center for the Mount Nebo Scenic Byway. Highlights include a historic schoolroom, blacksmith shop, complete Victorian home, and lessons in horse care in a cowboy room. A walking tour of Old Fort Payson, Old Fort Peteetneet, and Historic Payson features the school and other local landmarks.<br><br>
+                
+                Payson is a Certified Local Government (CLG) and is actively restoring its historic Main Street, enhancing its economic viability. Payson has recently established a city historic preservation board, including representatives from the historical society, People Preserving Peteetneet, the Historical Downtown Restoration Committee, the Daughters of Utah Pioneers, a past planning and zoning commissioner, and the community service director, chaired by the CLG representative.<br><br>
+                
+                A large annual Scottish Festival draws thousands of visitors and preserves the cultural heritage of some early settlers.</p>
             </div>
             
            

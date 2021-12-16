@@ -143,7 +143,11 @@ Author: Monika Meyers Related sheet: index.html
         }
         /* page articles */
 
-
+        .harticle img{
+            float: left;
+            max-width: 50%;
+            margin: 5px 20px 5px 10px;;
+        }
 
         .article img{
             float: left;
