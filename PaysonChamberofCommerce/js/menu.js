@@ -13,7 +13,7 @@ const cardview = document.querySelector('.view')
 
 gridbtn.addEventListener('click', () => {cardview.classList.toggle('gridengage')}, false);
 
-listbtn.addEventListener('click', () => {cardview.classList.remove('gridengage')}, false);
+listbtn.addEventListener('click', () => {cardview.classList.remove('gridengage')}, true);
 listbtn.addEventListener('click', () => {cardview.classList.toggle('listengage')}, false);
 
 gridbtn.addEventListener('click', () => {cardview.classList.remove('listengage')}, false);

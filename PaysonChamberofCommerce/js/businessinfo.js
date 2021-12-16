@@ -11,10 +11,7 @@ fetch(requestURL)
   .then(function (jsonObject) {
     
     const busInfo = jsonObject['directory'];
-
-    // const only = busInfo.filter((business) => town.name === 'Preston' || town.name === 'Fish Haven' || town.name === 'Soda Springs');
     
-
     busInfo.forEach(business => {
         //create the card with the elements for the information
         let card = document.createElement('section');
@@ -45,7 +42,28 @@ fetch(requestURL)
         
         //send to html on page
         document.querySelector('div.businessCards').appendChild(card);
-        
-    });
     
+    
+    });
+});
+
+const requestURL2 = 'businesses.json';
+
+fetch(requestURL2)
+  .then(function (response) {
+    if (!response.ok) {
+      throw Error(response.statusText);
+    } else {
+    return response.json();
+    }
+  })
+  .then(function (jsonObject) {
+
+    const eInfo = jsonObject['events'];
+
+    eInfo.forEach(event => {
+      let item = document.createElement('p');
+      item.innerHTML = `<span class="tEvent"> ${event.date}: ${event.name}</span>`;
+      document.querySelector('div.eList').appendChild(item);
+    });
 });

@@ -147,6 +147,9 @@ main{
     grid-template-columns: 1fr;
 }
 
+div.home {
+    background-color: var(--lt-green);
+}
 
 /* Home call to action */
 section .homeAction{margin: auto;}
@@ -158,11 +161,14 @@ section .homeAction{margin: auto;}
     box-shadow: 0 0 25px rgb(9, 0, 51);
     margin: 10px auto;
     padding: 5px 20px;
-    max-width: 60%;
+  
     font-size: .80rem;      
 }
 
-
+.actionItems a{
+    font-family: var(--spec-font);
+    font-weight: bold;
+}
 
 .actionItems{
     font-family: var(--body-font);
@@ -237,8 +243,7 @@ section .eBoard{margin: auto;}
     box-shadow: 0 0 25px rgb(9, 0, 51);
     margin: 10px auto;
     padding: 5px 20px;
-    max-width: 60%;
-    font-size: .80rem;     
+    max-width: 87%;   
 }
 
 .eList{ 
@@ -288,7 +293,9 @@ section .eBoard{margin: auto;}
     padding: 0px;
 }
 
-
+.direct h2 {
+    padding-bottom: 25px;
+}
 
 div.businessCards {
     position: relative;
@@ -299,13 +306,18 @@ div.businessCards {
 }
 .list {
     position: absolute;
-    top: -80px;
-    right: 60px;
+    top: -40px;
+    right: 50px;
+}
+
+.list img, .grid img {
+    width: 40%;
+    padding: 10px;
 }
 
 .grid {
     position: absolute;
-    top: -80px;
+    top: -40px;
     right: 5px;
 }
 
@@ -313,14 +325,22 @@ div.businessCards {
     display: flex;
     flex-direction: column;
     background-color: var(--blue);
-    /* max-width: 300px; */
+    max-width: 225px;
+    justify-self: auto;
+    margin: 10px auto;
+    box-shadow: 0 0 25px var(--dark);
+    border-radius: 10px;
 }
 
 .listengage section {
     display: flex;
     flex-direction: row;
     background-color: var(--blue);
-    /* max-width: 300px; */
+    box-shadow: 0 0 25px var(--dk-green);
+    border-radius: 10px;
+    max-width: 300px;
+    justify-self: baseline;
+    margin: 10px auto;
 }
 
 .businessCards h2{
@@ -333,11 +353,19 @@ div.businessCards {
     font-size: 0.9rem;
 }
 
-.businessCards img {
+.gridengage section img {
     height: 50px;
     padding:0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    margin: 10px auto;
+}
+.listengage section img {
+    width: 100px;
+    padding:0px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    margin: auto 10px;
 }
 
 /* Town info on home page */

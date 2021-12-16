@@ -67,21 +67,20 @@ Author: Monika Meyers Related sheet: index.html
         }
         /* Town events  */
 
+        div.home {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            max-width: 980px;
+            margin: auto;
+        }
         
         .eBoard h3 {
             font-size: 1.2rem;
         }
 
-        .eBoard{
-            text-align: left;
-            padding: 5px;
-            position: absolute;
-            bottom: 30px;
-            right: 20px;
-            opacity: .85;
-            max-width: 60%;
-            font-size: .75rem;    
-        }
+        /* .eBoard{
+            max-width: 90%;  
+        } */
 
         .homeAction h3 {
             font-size: 1.2rem;
@@ -92,9 +91,9 @@ Author: Monika Meyers Related sheet: index.html
             padding: 5px;
             position: absolute;
             opacity: .85;  
-            top: 30px;
-            left: 30px;  
-            max-width: 100%;
+            top: 10px;
+            left: 20px;  
+            max-width: 90%;
             font-size: 1rem;                    
         }
 
@@ -103,8 +102,14 @@ Author: Monika Meyers Related sheet: index.html
         /* div.townCards {
             max-width: 980px;
         } */
+        .gridengage section {
+            max-width: 400px;
+            margin: 10px;
+        }
 
-
+        div.gridengage {
+            grid-template-columns: 1fr 1fr;
+        }
         /* page articles */
 
         .article{
@@ -112,9 +117,9 @@ Author: Monika Meyers Related sheet: index.html
         }
 
         .article img{
-            float: right;
-            max-width: 25%;
-            margin: 0px 5px;
+            float: left;
+            max-width: 50%;
+            margin: 5px 20px 5px 10px;;
         }
 
         .lastTime {

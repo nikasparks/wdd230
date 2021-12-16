@@ -16,19 +16,19 @@ Author: Monika Meyers Related sheet: index.html
         font-size: 1.5rem;
     }
 
+    div.home {
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    /* .eBoard {
+        min-width: 90%;
+    } */
+
     div.businessCards {
         max-width: 980px;
         text-align: left;
     }
 
-    .businessCards img {
-        margin: 20px;
-    }
-
-    
-    /* .businessCards section {
-        align-items: center;
-    } */
 
     div.gridengage {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -37,10 +37,7 @@ Author: Monika Meyers Related sheet: index.html
     div.listengage {
         grid-template-columns: 1fr;
     }
-    
-    .listengage img {
-        margin: ;
-    }
+
 
     div.townCards h2 span {
         font-size: 2rem;
