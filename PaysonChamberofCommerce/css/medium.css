@@ -7,7 +7,6 @@ Author: Monika Meyers Related sheet: index.html
 
         header.home {
             flex-wrap: nowrap;
-            margin: auto auto auto 20px;
             justify-content: flex-start;
         }
 
@@ -18,7 +17,7 @@ Author: Monika Meyers Related sheet: index.html
         .navlist li {
             display: block; 
             flex: 1 1 auto;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
         }
         .navlist a { 
             text-align: center;
@@ -28,12 +27,12 @@ Author: Monika Meyers Related sheet: index.html
         }
         
         h1 {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
 
         .motto {
             letter-spacing: 1.5pt;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
 
         .logo {
@@ -57,10 +56,14 @@ Author: Monika Meyers Related sheet: index.html
         }
 
         .wide h3 {
-            font-size: 1rem;
+            font-size: 0.9rem;
             margin: auto;
             padding: 4px;
             border-bottom: solid 1px var(--light);
+        }
+
+        .wide p {
+            font-size: 0.8rem;
         }
 
         .dayforecast section {

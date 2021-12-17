@@ -117,7 +117,7 @@ ul{
 
 .navlist li{
     font-family: var(--header-font);
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 10px;
     display: none;
 }
@@ -129,7 +129,7 @@ ul{
 
 .navlist li:first-child{
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .active{font-weight: bold; text-shadow: 0px 0px 20px #00ffeb;}

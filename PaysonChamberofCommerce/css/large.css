@@ -8,12 +8,36 @@ Author: Monika Meyers Related sheet: index.html
         max-width: 980px;
     }
 
+    h1{
+        font-size: 1.8rem;
+    }
+
+    .navlist li {
+        font-size: 1.6rem;
+    }
+
+    .motto {
+        font-size: 1rem;
+    }
+
     .lastTime {
         font-size: 1.5rem;
     }
 
     .wide {
         margin: 20px;
+    }
+
+    .wide h2 {
+        font-size: 1.3rem;
+    }
+
+    .wide h3 {
+        font-size: 1.1rem;
+    }
+
+    .wide p {
+        font-size: 1rem;
     }
 
     div.home {
